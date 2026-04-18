@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAYA Hotels &amp; Resorts — İK Memnuniyet ve Değerlendirme Anketi</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+/* === Embedded QR Code Generator (qrcode-generator v1.4.4 by Kazuhiko Arase, MIT) === */
+var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],f={},c=function(t,r){o=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(i=4*e+17),l(0,0),l(i-7,0),l(0,i-7),s(),h(),d(t,r),e>=7&&v(t),null==a&&(a=p(e,n,u)),w(a,r)},l=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||i<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||i<=r+n||(o[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},h=function(){for(var t=8;t<i-8;t+=1)null==o[t][6]&&(o[t][6]=t%2==0);for(var r=8;r<i-8;r+=1)null==o[6][r]&&(o[6][r]=r%2==0)},s=function(){for(var t=B.getPatternPosition(e),r=0;r<t.length;r+=1)for(var n=0;n<t.length;n+=1){var i=t[r],a=t[n];if(null==o[i][a])for(var u=-2;u<=2;u+=1)for(var f=-2;f<=2;f+=1)o[i+u][a+f]=-2==u||2==u||-2==f||2==f||0==u&&0==f}},v=function(t){for(var r=B.getBCHTypeNumber(e),n=0;n<18;n+=1){var a=!t&&1==(r>>n&1);o[Math.floor(n/3)][n%3+i-8-3]=a}for(n=0;n<18;n+=1){a=!t&&1==(r>>n&1);o[n%3+i-8-3][Math.floor(n/3)]=a}},d=function(t,r){for(var e=n<<3|r,a=B.getBCHTypeInfo(e),u=0;u<15;u+=1){var f=!t&&1==(a>>u&1);u<6?o[u][8]=f:u<8?o[u+1][8]=f:o[i-15+u][8]=f}for(u=0;u<15;u+=1){f=!t&&1==(a>>u&1);u<8?o[8][i-u-1]=f:u<9?o[8][15-u-1+1]=f:o[8][15-u-1]=f}o[i-8][8]=!t},w=function(t,r){for(var e=-1,n=i-1,a=7,u=0,f=B.getMaskFunction(r),c=i-1;c>0;c-=2)for(6==c&&(c-=1);;){for(var g=0;g<2;g+=1)if(null==o[n][c-g]){var l=!1;u<t.length&&(l=1==(t[u]>>>a&1)),f(n,c-g)&&(l=!l),o[n][c-g]=l,-1==(a-=1)&&(u+=1,a=7)}if((n+=e)<0||i<=n){n-=e,e=-e;break}}},p=function(t,r,e){for(var n=A.getRSBlocks(t,r),o=b(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=k(i[u],l.getLength()-1).mod(l);for(a[u]=new Array(l.getLength()-1),g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=s>=0?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};f.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=M(t);break;case"Alphanumeric":e=x(t);break;case"Byte":e=m(t);break;case"Kanji":e=L(t);break;default:throw"mode:"+r}u.push(e),a=null},f.isDark=function(t,r){if(t<0||i<=t||r<0||i<=r)throw t+","+r;return o[t][r]},f.getModuleCount=function(){return i},f.make=function(){if(e<1){for(var t=1;t<40;t++){for(var r=A.getRSBlocks(t,n),o=b(),i=0;i<u.length;i++){var a=u[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var g=0;for(i=0;i<r.length;i++)g+=r[i].dataCount;if(o.getLengthInBits()<=8*g)break}e=t}c(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){c(!0,e);var n=B.getLostPoint(f);(0==e||t>n)&&(t=n,r=e)}return r}())},f.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<f.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<f.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=f.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},f.createSvgTag=function(t,r,e,n){var o={};"object"==typeof arguments[0]&&(t=(o=arguments[0]).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,c,g=f.getModuleCount()*t+2*r,l="";for(c="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",l+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',l+=o.scalable?"":' width="'+g+'px" height="'+g+'px"',l+=' viewBox="0 0 '+g+" "+g+'" ',l+=' preserveAspectRatio="xMinYMin meet"',l+=n.text||e.text?' role="img" aria-labelledby="'+y([n.id,e.id].join(" ").trim())+'"':"",l+=">",l+=n.text?'<title id="'+y(n.id)+'">'+y(n.text)+"</title>":"",l+=e.text?'<description id="'+y(e.id)+'">'+y(e.text)+"</description>":"",l+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',l+='<path d="',a=0;a<f.getModuleCount();a+=1)for(u=a*t+r,i=0;i<f.getModuleCount();i+=1)f.isDark(a,i)&&(l+="M"+(i*t+r)+","+u+c);return l+='" stroke="transparent" fill="black"/>',l+="</svg>"},f.createDataURL=function(t,r){t=t||2,r=void 0===r?4*t:r;var e=f.getModuleCount()*t+2*r,n=r,o=e-r;return I(e,e,function(r,e){if(n<=r&&r<o&&n<=e&&e<o){var i=Math.floor((r-n)/t),a=Math.floor((e-n)/t);return f.isDark(a,i)?0:1}return 1})},f.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=f.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=f.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=y(e),o+='"'),o+="/>"};var y=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return f.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*f.getModuleCount()+2*t,u=t,c=a-t,g={"██":"█","█ ":"▀"," █":"▄","  ":" "},l={"██":"▀","█ ":"▀"," █":" ","  ":" "},h="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<c&&u<=r&&r<c&&f.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<c&&u<=r+1&&r+1<c&&f.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",h+=t<1&&r+1>=c?l[i]:g[i];h+="\n"}return a%2&&t>0?h.substring(0,h.length-a-1)+Array(a+1).join("▀"):h.substring(0,h.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=f.getModuleCount()*t+2*r,u=r,c=a-r,g=Array(t+1).join("██"),l=Array(t+1).join("  "),h="",s="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),s="",n=0;n<a;n+=1)i=1,u<=n&&n<c&&u<=e&&e<c&&f.isDark(o,Math.floor((n-u)/t))&&(i=0),s+=i?g:l;for(o=0;o<t;o+=1)h+=s+"\n"}return h.substring(0,h.length-1)},f.renderTo2dContext=function(t,r){r=r||2;for(var e=f.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=f.isDark(n,o)?"black":"white",t.fillRect(n*r,o*r,r,r)},f};t.stringToBytes=(t.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,t.createStringToBytes=function(t,r){var e=function(){for(var e=S(t),n=function(){var t=e.read();if(-1==t)throw"eof";return t},o=0,i={};;){var a=e.read();if(-1==a)break;var u=n(),f=n()<<8|n();i[String.fromCharCode(a<<8|u)]=f,o+=1}if(o!=r)throw o+" != "+r;return i}(),n="?".charCodeAt(0);return function(t){for(var r=[],o=0;o<t.length;o+=1){var i=t.charCodeAt(o);if(i<128)r.push(i);else{var a=e[t.charAt(o)];"number"==typeof a?(255&a)==a?r.push(a):(r.push(a>>>8),r.push(255&a)):r.push(n)}}return r}};var r,e,n,o,i,a=1,u=2,f=4,c=8,g={L:1,M:0,Q:3,H:2},l=0,h=1,s=2,v=3,d=4,w=5,p=6,y=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],e=1335,n=7973,i=function(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r},(o={}).getBCHTypeInfo=function(t){for(var r=t<<10;i(r)-i(e)>=0;)r^=e<<i(r)-i(e);return 21522^(t<<10|r)},o.getBCHTypeNumber=function(t){for(var r=t<<12;i(r)-i(n)>=0;)r^=n<<i(r)-i(n);return t<<12|r},o.getPatternPosition=function(t){return r[t-1]},o.getMaskFunction=function(t){switch(t){case l:return function(t,r){return(t+r)%2==0};case h:return function(t,r){return t%2==0};case s:return function(t,r){return r%3==0};case v:return function(t,r){return(t+r)%3==0};case d:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case w:return function(t,r){return t*r%2+t*r%3==0};case p:return function(t,r){return(t*r%2+t*r%3)%2==0};case y:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},o.getErrorCorrectPolynomial=function(t){for(var r=k([1],0),e=0;e<t;e+=1)r=r.multiply(k([1,C.gexp(e)],0));return r},o.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case f:case c:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case f:return 16;case c:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case f:return 16;case c:return 12;default:throw"mode:"+t}}},o.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);i>5&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},o),C=function(){for(var t=new Array(256),r=new Array(256),e=0;e<8;e+=1)t[e]=1<<e;for(e=8;e<256;e+=1)t[e]=t[e-4]^t[e-5]^t[e-6]^t[e-8];for(e=0;e<255;e+=1)r[t[e]]=e;var n={glog:function(t){if(t<1)throw"glog("+t+")";return r[t]},gexp:function(r){for(;r<0;)r+=255;for(;r>=256;)r-=255;return t[r]}};return n}();function k(t,r){if(void 0===t.length)throw t.length+"/"+r;var e=function(){for(var e=0;e<t.length&&0==t[e];)e+=1;for(var n=new Array(t.length-e+r),o=0;o<t.length-e;o+=1)n[o]=t[o+e];return n}(),n={getAt:function(t){return e[t]},getLength:function(){return e.length},multiply:function(t){for(var r=new Array(n.getLength()+t.getLength()-1),e=0;e<n.getLength();e+=1)for(var o=0;o<t.getLength();o+=1)r[e+o]^=C.gexp(C.glog(n.getAt(e))+C.glog(t.getAt(o)));return k(r,0)},mod:function(t){if(n.getLength()-t.getLength()<0)return n;for(var r=C.glog(n.getAt(0))-C.glog(t.getAt(0)),e=new Array(n.getLength()),o=0;o<n.getLength();o+=1)e[o]=n.getAt(o);for(o=0;o<t.getLength();o+=1)e[o]^=C.gexp(C.glog(t.getAt(o))+r);return k(e,0).mod(t)}};return n}var A=function(){var t=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],r=function(t,r){var e={};return e.totalCount=t,e.dataCount=r,e},e={};return e.getRSBlocks=function(e,n){var o=function(r,e){switch(e){case g.L:return t[4*(r-1)+0];case g.M:return t[4*(r-1)+1];case g.Q:return t[4*(r-1)+2];case g.H:return t[4*(r-1)+3];default:return}}(e,n);if(void 0===o)throw"bad rs block @ typeNumber:"+e+"/errorCorrectionLevel:"+n;for(var i=o.length/3,a=[],u=0;u<i;u+=1)for(var f=o[3*u+0],c=o[3*u+1],l=o[3*u+2],h=0;h<f;h+=1)a.push(r(c,l));return a},e}(),b=function(){var t=[],r=0,e={getBuffer:function(){return t},getAt:function(r){var e=Math.floor(r/8);return 1==(t[e]>>>7-r%8&1)},put:function(t,r){for(var n=0;n<r;n+=1)e.putBit(1==(t>>>r-n-1&1))},getLengthInBits:function(){return r},putBit:function(e){var n=Math.floor(r/8);t.length<=n&&t.push(0),e&&(t[n]|=128>>>r%8),r+=1}};return e},M=function(t){var r=a,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+2<r.length;)t.put(o(r.substring(n,n+3)),10),n+=3;n<r.length&&(r.length-n==1?t.put(o(r.substring(n,n+1)),4):r.length-n==2&&t.put(o(r.substring(n,n+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return n},x=function(t){var r=u,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+1<r.length;)t.put(45*o(r.charAt(n))+o(r.charAt(n+1)),11),n+=2;n<r.length&&t.put(o(r.charAt(n)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return n},m=function(r){var e=f,n=t.stringToBytes(r),o={getMode:function(){return e},getLength:function(t){return n.length},write:function(t){for(var r=0;r<n.length;r+=1)t.put(n[r],8)}};return o},L=function(r){var e=c,n=t.stringToBytesFuncs.SJIS;if(!n)throw"sjis not supported.";!function(){var t=n("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=n(r),i={getMode:function(){return e},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return i},D=function(){var t=[],r={writeByte:function(r){t.push(255&r)},writeShort:function(t){r.writeByte(t),r.writeByte(t>>>8)},writeBytes:function(t,e,n){e=e||0,n=n||t.length;for(var o=0;o<n;o+=1)r.writeByte(t[o+e])},writeString:function(t){for(var e=0;e<t.length;e+=1)r.writeByte(t.charCodeAt(e))},toByteArray:function(){return t},toString:function(){var r="";r+="[";for(var e=0;e<t.length;e+=1)e>0&&(r+=","),r+=t[e];return r+="]"}};return r},S=function(t){var r=t,e=0,n=0,o=0,i={read:function(){for(;o<8;){if(e>=r.length){if(0==o)return-1;throw"unexpected end of file./"+o}var t=r.charAt(e);if(e+=1,"="==t)return o=0,-1;t.match(/^\s$/)||(n=n<<6|a(t.charCodeAt(0)),o+=6)}var i=n>>>o-8&255;return o-=8,i}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return i},I=function(t,r,e){for(var n=function(t,r){var e=t,n=r,o=new Array(t*r),i={setPixel:function(t,r,n){o[r*e+t]=n},write:function(t){t.writeString("GIF87a"),t.writeShort(e),t.writeShort(n),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(e),t.writeShort(n),t.writeByte(0);var r=a(2);t.writeByte(2);for(var o=0;r.length-o>255;)t.writeByte(255),t.writeBytes(r,o,255),o+=255;t.writeByte(r.length-o),t.writeBytes(r,o,r.length-o),t.writeByte(0),t.writeString(";")}},a=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,i=u(),a=0;a<r;a+=1)i.add(String.fromCharCode(a));i.add(String.fromCharCode(r)),i.add(String.fromCharCode(e));var f,c,g,l=D(),h=(f=l,c=0,g=0,{write:function(t,r){if(t>>>r!=0)throw"length over";for(;c+r>=8;)f.writeByte(255&(t<<c|g)),r-=8-c,t>>>=8-c,g=0,c=0;g|=t<<c,c+=r},flush:function(){c>0&&f.writeByte(g)}});h.write(r,n);var s=0,v=String.fromCharCode(o[s]);for(s+=1;s<o.length;){var d=String.fromCharCode(o[s]);s+=1,i.contains(v+d)?v+=d:(h.write(i.indexOf(v),n),i.size()<4095&&(i.size()==1<<n&&(n+=1),i.add(v+d)),v=d)}return h.write(i.indexOf(v),n),h.write(e,n),h.flush(),l.toByteArray()},u=function(){var t={},r=0,e={add:function(n){if(e.contains(n))throw"dup key:"+n;t[n]=r,r+=1},size:function(){return r},indexOf:function(r){return t[r]},contains:function(r){return void 0!==t[r]}};return e};return i}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=D();n.write(a);for(var u=function(){var t=0,r=0,e=0,n="",o={},i=function(t){n+=String.fromCharCode(a(63&t))},a=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return o.writeByte=function(n){for(t=t<<8|255&n,r+=8,e+=1;r>=6;)i(t>>>r-6),r-=6},o.flush=function(){if(r>0&&(i(t<<6-r),t=0,r=0),e%3!=0)for(var o=3-e%3,a=0;a<o;a+=1)n+="="},o.toString=function(){return n},o}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return t}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||n>=57344?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});
+/* === KAYA makeQR helper: builds a high-quality offline QR data URL === */
+function makeQR(text, pxSize){
+  pxSize = pxSize || 300;
+  var ecc = 'M';
+  var qr;
+  // Auto type number: start from 0 (auto), retry with higher ECC if too long
+  try { qr = qrcode(0, ecc); qr.addData(String(text)); qr.make(); }
+  catch(e){ qr = qrcode(0, 'L'); qr.addData(String(text)); qr.make(); }
+  var modules = qr.getModuleCount();
+  var margin = 4; // modules
+  var cell = Math.max(2, Math.floor(pxSize / (modules + margin*2)));
+  return qr.createDataURL(cell, margin);
+}
+</script>
+<style>
+:root{
+  --navy:#0C1C40; --navy-d:#06112B; --navy-l:#1A2D5C;
+  --gold:#B8973A; --gold-l:#D4B765; --gold-d:#8E7029;
+  --cream:#F8F4EE; --cream-d:#EFE8DC;
+  --ink:#111827; --muted:#6B7280;
+  --success:#15803D; --warn:#B45309; --danger:#B91C1C;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Segoe UI','Calibri',Arial,sans-serif;
+  background:var(--cream); color:var(--ink);
+  line-height:1.5; font-size:14px;
+}
+.hdr{
+  background:linear-gradient(135deg,var(--navy),var(--navy-l));
+  border-bottom:2px solid var(--gold);
+  padding:14px 22px; display:flex; justify-content:space-between; align-items:center;
+  position:sticky; top:0; z-index:50; box-shadow:0 4px 18px rgba(0,0,0,.25);
+}
+.hdr-brand{display:flex; align-items:center; gap:14px}
+.hdr-logo{
+  width:44px; height:44px; border-radius:10px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  color:var(--navy); font-weight:900; font-size:18px;
+  display:flex; align-items:center; justify-content:center;
+}
+.hdr-ttl{color:var(--gold); font-size:14px; font-weight:700; letter-spacing:1.5px}
+.hdr-sub{color:#C4CBDA; font-size:11px; letter-spacing:.5px}
+.hdr-btn{
+  background:transparent; border:1px solid rgba(184,151,58,.3); color:var(--gold);
+  padding:8px 14px; border-radius:8px; cursor:pointer; font-size:12px;
+  font-weight:600; display:inline-flex; align-items:center; gap:6px;
+  font-family:inherit;
+}
+.hdr-btn:hover{background:rgba(184,151,58,.1)}
+.hdr-user{color:var(--gold-l); font-weight:700; font-size:13px; text-align:right}
+
+.tabs{
+  background:var(--navy); border-bottom:2px solid var(--gold);
+  padding:0 22px; display:flex; gap:4px; overflow-x:auto;
+  position:sticky; top:70px; z-index:40;
+}
+.tab{
+  padding:12px 18px; border:none; background:transparent;
+  color:#A0A8BC; font-size:13px; font-weight:600; cursor:pointer;
+  display:flex; align-items:center; gap:8px; border-bottom:3px solid transparent;
+  white-space:nowrap; font-family:inherit;
+}
+.tab.active{color:var(--gold); border-bottom-color:var(--gold)}
+.tab:hover:not(.active){color:var(--cream)}
+
+.main{max-width:1280px; margin:0 auto; padding:24px 22px 60px}
+.survey-main{max-width:880px}
+.card{
+  background:#FFF; border-radius:14px; padding:22px;
+  border:1px solid var(--cream-d); margin-bottom:16px;
+}
+.card-ttl{
+  display:flex; align-items:center; gap:8px;
+  font-size:12px; font-weight:800; color:var(--navy);
+  letter-spacing:1px; text-transform:uppercase; margin-bottom:16px;
+}
+.card-hdr{display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px}
+
+.btn{
+  padding:10px 16px; border:none; border-radius:8px; cursor:pointer;
+  font-size:13px; font-weight:700; display:inline-flex; align-items:center;
+  gap:8px; font-family:inherit; transition:all .15s;
+}
+.btn:disabled{opacity:.5; cursor:not-allowed}
+.btn-primary{background:var(--navy); color:var(--gold-l)}
+.btn-primary:hover:not(:disabled){background:var(--navy-d)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-l)); color:var(--navy); font-weight:800}
+.btn-gold:hover:not(:disabled){transform:translateY(-1px); box-shadow:0 6px 16px rgba(184,151,58,.4)}
+.btn-danger{background:transparent; color:var(--danger); border:1px solid rgba(185,28,28,.3)}
+.btn-danger:hover:not(:disabled){background:rgba(185,28,28,.08)}
+.btn-big{
+  width:100%; padding:16px 20px; border-radius:12px; font-size:15px;
+  font-weight:800; letter-spacing:1px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-l)); color:var(--navy);
+  border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px;
+  box-shadow:0 10px 28px rgba(184,151,58,.35); font-family:inherit;
+}
+.btn-big:disabled{background:#9CA3AF; box-shadow:none; cursor:not-allowed}
+
+.label{font-size:11px; font-weight:700; color:var(--navy); letter-spacing:1px; margin-bottom:5px; display:block}
+.input, .select, .textarea{
+  width:100%; padding:12px 14px; border:1.5px solid var(--cream-d);
+  border-radius:10px; font-size:14px; color:var(--ink); background:#FFF;
+  font-family:inherit; outline:none;
+}
+.input:focus, .select:focus, .textarea:focus{border-color:var(--gold)}
+.textarea{min-height:100px; resize:vertical; line-height:1.6; font-size:13px}
+
+.survey-wrap{
+  min-height:100vh; background:linear-gradient(180deg,var(--navy),var(--navy-d));
+  color:var(--cream);
+}
+.survey-card{
+  background:var(--cream); color:var(--ink); padding:30px; border-radius:18px;
+  border:2px solid var(--gold); box-shadow:0 10px 40px rgba(0,0,0,.3);
+}
+.icon-circle{
+  width:64px; height:64px; margin:0 auto 14px; border-radius:14px;
+  background:var(--navy); color:var(--gold);
+  display:flex; align-items:center; justify-content:center;
+}
+.survey-h1{color:var(--navy); font-size:22px; margin-bottom:6px; text-align:center}
+.survey-sub{color:var(--gold-d); font-weight:600; font-size:13px; text-align:center}
+
+.notice{
+  padding:14px; border-radius:10px; background:rgba(184,151,58,.15);
+  border:1px solid rgba(184,151,58,.35); color:var(--navy);
+  font-size:12px; line-height:1.6;
+}
+.err{
+  padding:10px 14px; background:#FEE2E2; border:1px solid #FECACA;
+  border-radius:8px; color:var(--danger); font-size:13px;
+  display:flex; align-items:center; gap:8px;
+}
+.success-box{
+  padding:10px 14px; background:#DCFCE7; border:1px solid #BBF7D0;
+  border-radius:8px; color:var(--success); font-size:13px;
+}
+
+/* SECTION HEADER */
+.sect-hdr{
+  background:linear-gradient(135deg,var(--navy),var(--navy-l));
+  color:var(--gold-l); padding:14px 18px; border-radius:12px;
+  margin:24px 0 12px; font-weight:700; font-size:14px;
+  border-left:5px solid var(--gold); display:flex; align-items:center; gap:10px;
+}
+.sect-code{
+  display:inline-block; width:30px; height:30px; border-radius:8px;
+  background:var(--gold); color:var(--navy); font-weight:900;
+  display:flex; align-items:center; justify-content:center; font-size:14px;
+}
+
+/* QUESTION CARD */
+.q-card{
+  background:var(--cream); color:var(--ink); border-radius:12px; padding:18px;
+  margin-bottom:10px; border:1px solid var(--cream-d); transition:border-color .2s;
+}
+.q-card.answered{border:2px solid var(--success)}
+.q-card.q-missing{
+  border:2px solid var(--danger) !important;
+  animation: qshake .4s ease-in-out;
+  background:#FEF2F2 !important;
+}
+@keyframes qshake{
+  0%,100%{transform:translateX(0)}
+  25%{transform:translateX(-6px)}
+  75%{transform:translateX(6px)}
+}
+.q-num{
+  display:inline-block; background:var(--navy); color:var(--gold-l);
+  padding:3px 10px; border-radius:20px; font-size:11px;
+  font-weight:800; margin-bottom:8px; letter-spacing:.5px; font-family:monospace;
+}
+.q-text{color:var(--navy); font-size:14px; font-weight:600; margin-bottom:14px; line-height:1.5}
+
+/* SCALE 1-5 */
+.scale-5{display:grid; grid-template-columns:repeat(5,1fr); gap:6px}
+.scale-10{display:grid; grid-template-columns:repeat(10,1fr); gap:4px}
+.scale-opt{
+  padding:10px 4px; background:#FFF; border:2px solid var(--cream-d);
+  border-radius:8px; cursor:pointer; display:flex; flex-direction:column;
+  align-items:center; gap:3px; font-family:inherit; transition:all .15s;
+}
+.scale-5 .scale-opt{min-height:72px}
+.scale-10 .scale-opt{min-height:50px}
+.scale-opt:hover{border-color:var(--gold)}
+.scale-num{font-size:18px; font-weight:900; color:var(--muted)}
+.scale-10 .scale-num{font-size:15px}
+.scale-lbl{font-size:9px; color:var(--muted); font-weight:700; text-align:center; line-height:1.15}
+
+.progress{height:8px; background:var(--cream-d); border-radius:10px; overflow:hidden; margin-top:6px}
+.progress-fill{height:100%; background:linear-gradient(90deg,var(--gold),var(--gold-l)); transition:width .4s}
+
+.kpi-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-bottom:20px}
+.kpi{
+  background:#FFF; border-radius:14px; padding:18px;
+  border:1px solid var(--cream-d); display:flex; align-items:center; gap:14px;
+}
+.kpi-icn{
+  width:48px; height:48px; border-radius:12px;
+  background:linear-gradient(135deg,var(--navy),var(--navy-l));
+  color:var(--gold); display:flex; align-items:center; justify-content:center;
+}
+.kpi-lbl{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; font-weight:700}
+.kpi-val{font-size:26px; font-weight:800; line-height:1.1}
+.kpi-sub{font-size:11px; color:var(--muted)}
+
+.grid-2{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:14px; margin-bottom:16px}
+.chart-box{position:relative; width:100%; height:320px}
+
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%; border-collapse:collapse; font-size:12px}
+.tbl th{
+  padding:10px 8px; font-size:11px; font-weight:700; letter-spacing:.5px;
+  text-align:left; white-space:nowrap; background:var(--navy); color:var(--gold-l);
+}
+.tbl td{padding:9px 8px; border-bottom:1px solid var(--cream-d); white-space:nowrap}
+.tbl tr:nth-child(even){background:var(--cream)}
+
+.chip-row{display:flex; gap:6px; flex-wrap:wrap}
+.chip{
+  padding:6px 12px; border-radius:6px; background:transparent;
+  color:var(--navy); border:1px solid var(--cream-d); cursor:pointer;
+  font-size:12px; font-weight:600; font-family:inherit;
+}
+.chip.active{background:var(--navy); color:var(--gold-l); border-color:var(--navy)}
+
+.modal-bg{
+  position:fixed; inset:0; background:rgba(12,28,64,.75);
+  display:flex; align-items:center; justify-content:center; padding:20px; z-index:100;
+}
+.modal{
+  background:#FFF; border-radius:16px; padding:24px; max-width:720px; width:100%;
+  max-height:90vh; overflow:auto; border:2px solid var(--gold);
+}
+
+.ty-circle{
+  width:80px; height:80px; margin:0 auto 18px; border-radius:50%;
+  background:var(--success); color:#FFF;
+  display:flex; align-items:center; justify-content:center;
+}
+
+.hidden{display:none !important}
+.text-center{text-align:center}
+.footer{text-align:center; padding:20px; font-size:11px; color:#7A8499; border-top:1px solid var(--navy-l); margin-top:20px}
+.monospace{font-family:monospace}
+
+.comment-box{padding:14px; border-left:4px solid var(--gold); background:var(--cream); border-radius:10px; margin-bottom:12px}
+.comment-meta{font-size:11px; color:var(--muted); margin-bottom:6px}
+.comment-text{font-size:13px; color:var(--ink); line-height:1.6; white-space:pre-wrap}
+
+.hotel-card{padding:18px; border-radius:12px; border:2px solid}
+
+.dept-row{display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--cream-d)}
+.dept-name{font-weight:600; color:var(--navy)}
+.dept-bar-wrap{flex:1; margin:0 14px; height:22px; background:var(--cream); border-radius:4px; overflow:hidden; position:relative}
+.dept-bar{height:100%; border-radius:4px; display:flex; align-items:center; padding-left:8px; color:#FFF; font-size:11px; font-weight:700}
+
+.url-box{
+  padding:14px; background:var(--cream); border:2px dashed var(--gold);
+  border-radius:10px; font-family:monospace; font-size:13px; color:var(--navy);
+  word-break:break-all; display:flex; align-items:center; justify-content:space-between; gap:12px;
+}
+
+@media print{
+  .no-print{display:none !important}
+  body{background:#FFF}
+}
+</style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script>
+/* =========================================================
+   KAYA HOTELS & RESORTS — İK MEMNUNİYET VE DEĞERLENDİRME ANKETİ
+   Form No: KPS.IK.IS01_FR67  ·  Rev: 00  ·  Yayın: 17.04.2026
+   Tek dosyalı, tarayıcıda direkt çalışan sistem.
+   ========================================================= */
+
+/* ---------- SABİTLER ---------- */
+const DOC_INFO = { no:'KPS.IK.IS01_FR67', rev:'00', date:'17.04.2026' };
+
+const SECTIONS = [
+  {code:'A', title:'Genel Değerlendirme', scale:5, questions:[
+    'İK Departmanı, otelimizin işleyişine katkı sağlar.',
+    'İK\'nın yaptığı işler, otelimizin ve departmanımın ihtiyaçlarına uygundur.',
+    'İK Departmanı\'nın çalışmalarından genel olarak memnunum.'
+  ]},
+  {code:'B', title:'İletişim ve Ulaşılabilirlik', scale:5, questions:[
+    'İK ekibine ihtiyacım olduğunda kolayca ulaşabilirim.',
+    'İK\'dan gelen duyurular ve bilgiler zamanında, açık ve anlaşılır şekilde iletilir.',
+    'Sorularıma ve isteklerime kısa sürede cevap verilir.',
+    'İK ekibi bana saygılı ve yardımcı bir şekilde davranır.',
+    'İşimle ilgili değişiklikleri İK bana önceden haber verir.'
+  ]},
+  {code:'C', title:'İşe Alım ve Personel Planlama', scale:5, questions:[
+    'Departmanımın personel ihtiyaçları zamanında karşılanır.',
+    'İşe alınan yeni çalışanlar, yapacakları işe uygun kişilerdir.',
+    'Yeni çalışanlara verilen oryantasyon, işe uyum sağlamalarına yardımcı olur.',
+    'Sezonluk ve dönemsel personel planlamaları departmanımın iş akışına uygun yapılır.'
+  ]},
+  {code:'D', title:'Çalışan İlişkileri ve Sorun Çözümü', scale:5, questions:[
+    'Personelle yaşanan sorunların çözümünde İK bize destek olur.',
+    'Şikâyet ve anlaşmazlık durumlarında İK adil ve tarafsız davranır.',
+    'Çalışanların mutluluğunu ve motivasyonunu artıracak çalışmalar yapılır.',
+    'İK, çalışanların görüş ve önerilerini dinler ve dikkate alır.',
+    'İK ile paylaşılan özel bilgiler gizli tutulur ve herkese eşit davranılır.'
+  ]},
+  {code:'E', title:'Günlük İş Desteği ve İş Birliği', scale:5, questions:[
+    'İK, günlük işlerde ihtiyacım olan desteği zamanında verir.',
+    'Yoğun dönemlerde İK ile iş birliğimiz sorunsuz ilerler.',
+    'Vardiya, izin ve puantaj işlemleri doğru ve açık şekilde yürütülür.',
+    'İşimde karşılaştığım sorunların çözümünde İK ile rahat çalışabiliyorum.',
+    'İK ekibi, departman yöneticileriyle düzenli olarak görüşerek ihtiyaçları yakından takip eder.'
+  ]},
+  {code:'F', title:'Eğitim, Gelişim ve Performans', scale:5, questions:[
+    'İK, departmanımın eğitim ihtiyaçlarını bilir ve uygun eğitimleri sağlar.',
+    'Verilen eğitimler konu, süre ve zamanlama bakımından işime uygundur.',
+    'Performans değerlendirmeleri adil ve açık bir şekilde yapılır.',
+    'Terfi ve görev değişikliklerinde kişinin başarısı ve emeği dikkate alınır.',
+    'Başarılı çalışmalar İK tarafından fark edilir ve takdir edilir.'
+  ]},
+  {code:'G', title:'Özlük İşleri ve Yasal Uyum', scale:5, questions:[
+    'Özlük işlerim (sözleşme, bordro, SGK, izin, yan haklar vb.) doğru ve zamanında yürütülür.',
+    'Yan haklarım ve sosyal imkânlarım hakkında bana açıkça bilgi verilir.',
+    'İK, iş sağlığı ve güvenliği ile yasal kurallara uyumu takip eder ve uygular.'
+  ]},
+  {code:'H', title:'Tavsiye ve Bağlılık', scale:10, questions:[
+    'Kaya\'yı çalışmak için tanıdıklarıma tavsiye ederim.',
+    'Kaya\'da çalışmaya devam etmek istiyorum.'
+  ]}
+];
+
+const OPEN_QUESTIONS = [
+  'İK Departmanı\'nın sizce en iyi yaptığı şeyler nelerdir?',
+  'İK\'nın daha iyi olmasını istediğiniz konular nelerdir?',
+  'Departmanınız ile İK arasındaki iş birliğini geliştirmek için öneriniz var mı?',
+  'Eklemek istediğiniz diğer görüş ve önerileriniz.'
+];
+
+/* Toplam soru numaralandırması */
+const ALL_QS = [];
+let qNum = 1;
+SECTIONS.forEach(s => {
+  s.questions.forEach((t,i) => {
+    ALL_QS.push({num:qNum++, section:s.code, scale:s.scale, text:t, idxInSection:i});
+  });
+});
+const TOTAL_LIKERT = 30;   // 1..30 (scale 5)
+const TOTAL_NPS    = 2;    // 31..32 (scale 10)
+const TOTAL_SCORE  = TOTAL_LIKERT + TOTAL_NPS; // 32
+
+const SCALE_5_LBL = ['Kesinlikle Katılmıyorum','Katılmıyorum','Kısmen Katılıyorum','Katılıyorum','Kesinlikle Katılıyorum'];
+const SCALE_5_COL = ['#B91C1C','#D97706','#CA8A04','#15803D','#047857'];
+
+const DEFAULT_DEPARTMENTS = [
+  'Housekeeping','Front Office','Yiyecek & İçecek Servis','Mutfak',
+  'SPA & Wellness','Animasyon & Rekreasyon','Teknik Servis','Güvenlik',
+  'Bahçe / Peyzaj','Satın Alma','Muhasebe / Finans','İnsan Kaynakları',
+  'Kalite Müdürlüğü','Satış & Pazarlama','Rezervasyon',
+  'Guest Relations','Bilgi İşlem','Genel Müdürlük','Diğer'
+];
+const HOTELS = ['Kaya Palazzo Golf Resort','Kaya Belek'];
+const TENURE = ['0-1 yıl','1-3 yıl','3-5 yıl','5-10 yıl','10+ yıl'];
+
+const DEFAULT_ADMINS = {
+  kalite:{password:'Kalite2026!', name:'Kalite Müdürü'},
+  ik:    {password:'Ik2026!',     name:'İnsan Kaynakları Müdürü'}
+};
+
+const K_CONFIG='kayaHR_config_v2', K_RESP='kayaHR_responses_v2', K_SUBMITTED='kayaHR_submitted_v2';
+
+/* ---------- STORAGE ---------- */
+const S = {
+  get(k,fb){ try{const v=localStorage.getItem(k); return v?JSON.parse(v):fb;}catch{return fb;} },
+  set(k,v){ try{localStorage.setItem(k,JSON.stringify(v));return true;}catch{return false;} },
+  del(k){ try{localStorage.removeItem(k); return true;}catch{return false;} }
+};
+
+/* ---------- DURUM ---------- */
+let state = {
+  config: null,
+  responses: [],
+  session: null,
+  view: 'survey',
+  adminTab: 'dashboard',
+  surveyStage: 'intro',
+  info: {hotel:'', department:'', position:'', tenure:''},
+  scores: new Array(TOTAL_SCORE).fill(0),
+  comments: new Array(OPEN_QUESTIONS.length).fill(''),
+  err: '',
+  respFilter: {dept:'', hotel:'', tenure:'', withComment:false},
+  selectedResp: null
+};
+
+/* ---------- YARDIMCILAR ---------- */
+const genId = () => Date.now().toString(36)+Math.random().toString(36).slice(2,8);
+const avg = a => a.length ? a.reduce((x,y)=>x+y,0)/a.length : 0;
+const fmt = (n,d=2) => Number.isFinite(n)?n.toFixed(d):'—';
+const scoreColor = s => {
+  if(s>=4.2) return '#15803D';
+  if(s>=3.5) return '#16A34A';
+  if(s>=2.8) return '#B45309';
+  if(s>=2.0) return '#DC2626';
+  return '#B91C1C';
+};
+const nps10Color = s => {
+  if(s>=9) return '#047857';
+  if(s>=7) return '#15803D';
+  if(s>=5) return '#CA8A04';
+  if(s>=3) return '#D97706';
+  return '#B91C1C';
+};
+const scoreLabel = s => {
+  if(s>=4.5) return 'Çok İyi';
+  if(s>=3.5) return 'İyi';
+  if(s>=2.5) return 'Orta';
+  if(s>=1.5) return 'Geliştirilmeli';
+  return 'Yetersiz';
+};
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ---------- İKON SETİ ---------- */
+const ICN = {
+  shield:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+  check:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
+  x:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>',
+  alert:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
+  award:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>',
+  lock:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
+  logout:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>',
+  bar:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>',
+  trend:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>',
+  doc:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>',
+  settings:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>',
+  download:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+  trash:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
+  copy:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
+  refresh:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>',
+  msg:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+  link:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+  bigshield:'<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+  bigclip:'<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>',
+  bigcheck:'<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
+  bigalert:'<svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
+  star:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
+  target:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+  bldg:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>',
+  heart:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>'
+};
+
+/* =========================================================
+   BAŞLATMA
+   ========================================================= */
+function boot(){
+  let cfg = S.get(K_CONFIG, null);
+  if(!cfg){
+    cfg = {
+      admins: DEFAULT_ADMINS,
+      departments: DEFAULT_DEPARTMENTS.slice(),
+      hotels: HOTELS.slice(),
+      tenure: TENURE.slice(),
+      surveyActive: true,
+      surveyTitle: 'İnsan Kaynakları Memnuniyet ve Değerlendirme Anketi',
+      surveySubtitle: '2026 Dönem Değerlendirmesi',
+      allowMultipleSubmissions: false,
+      sheetsWebhookUrl: '',
+      createdAt: new Date().toISOString()
+    };
+    S.set(K_CONFIG, cfg);
+  }
+  state.config = cfg;
+  state.responses = S.get(K_RESP, []);
+
+  const h = window.location.hash;
+  if(h.includes('admin')){
+    state.view = state.session ? 'admin' : 'admin-login';
+  } else {
+    state.view = 'survey';
+    if(!cfg.allowMultipleSubmissions && S.get(K_SUBMITTED, false)){
+      state.surveyStage = 'already';
+    }
+  }
+  render();
+}
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+function render(){
+  const root = document.getElementById('app');
+  if(state.view === 'survey'){
+    root.innerHTML = renderSurvey();
+  } else if(state.view === 'admin-login'){
+    root.innerHTML = renderAdminLogin();
+  } else if(state.view === 'admin'){
+    root.innerHTML = renderAdmin();
+    setTimeout(attachAdminCharts, 50);
+  }
+  attachEvents();
+}
+
+function renderHeader(right){
+  return `<header class="hdr">
+    <div class="hdr-brand">
+      <div class="hdr-logo">K</div>
+      <div>
+        <div class="hdr-ttl">KAYA HOTELS &amp; RESORTS</div>
+        <div class="hdr-sub">İK Memnuniyet ve Değerlendirme Anketi &middot; ${DOC_INFO.no}</div>
+      </div>
+    </div>
+    <div>${right||''}</div>
+  </header>`;
+}
+
+/* =========================================================
+   ANKET EKRANI
+   ========================================================= */
+function renderSurvey(){
+  const cfg = state.config;
+  let body = '';
+
+  if(!cfg.surveyActive){
+    body = `<div class="survey-card text-center">
+      <div style="color:var(--warn); margin:0 auto 10px">${ICN.bigalert}</div>
+      <h2 style="color:var(--navy); margin-bottom:8px">Anket Şu Anda Aktif Değil</h2>
+      <p style="color:var(--muted)">Anket dönemi yönetici tarafından kapatılmıştır.</p>
+    </div>`;
+  } else if(state.surveyStage==='already'){
+    body = `<div class="survey-card text-center">
+      <div class="icon-circle" style="background:var(--success); color:#FFF">${ICN.bigcheck}</div>
+      <h2 style="color:var(--navy); margin-bottom:10px">Anketi Daha Önce Doldurdunuz</h2>
+      <p style="color:var(--ink); line-height:1.7; max-width:520px; margin:0 auto 18px">
+        Bu cihazdan daha önce anket gönderilmiş. Katılımınız için teşekkür ederiz.
+      </p>
+      <div class="notice" style="text-align:left">
+        Yanıtlarınız alındı ve sonuçlar yalnızca Kalite ve İK Müdürlükleri tarafından görüntülenmektedir.
+      </div>
+    </div>`;
+  } else if(state.surveyStage==='done'){
+    body = `<div class="survey-card text-center">
+      <div class="ty-circle">${ICN.bigcheck}</div>
+      <h1 style="color:var(--navy); font-size:26px; margin-bottom:10px">Teşekkür Ederiz</h1>
+      <p style="color:var(--ink); font-size:15px; line-height:1.7; max-width:540px; margin:0 auto 18px">
+        Değerlendirmeniz başarıyla kaydedildi. Görüşleriniz, İK süreçlerimizin
+        sürekli iyileştirilmesi için kullanılacaktır.
+      </p>
+      <div style="display:inline-block; padding:10px 22px; border-radius:20px; background:rgba(184,151,58,.2); color:var(--gold-d); font-weight:700; font-size:13px; letter-spacing:1px">
+        ★ Katılımınız bizim için değerlidir
+      </div>
+    </div>`;
+  } else if(state.surveyStage==='form'){
+    body = renderForm();
+  } else {
+    body = renderIntro();
+  }
+
+  return `
+  <div class="survey-wrap">
+    ${renderHeader(`<button class="hdr-btn" data-act="goto-admin">${ICN.shield} Yönetici Girişi</button>`)}
+    <main class="main survey-main">${body}</main>
+    <div class="footer">KAYA Hotels &amp; Resorts &middot; İK Departmanı &middot; ${DOC_INFO.no} Rev.${DOC_INFO.rev} &middot; Gizlidir &middot; 2026</div>
+  </div>`;
+}
+
+function renderIntro(){
+  const cfg = state.config;
+  return `<div class="survey-card">
+    <div class="icon-circle">${ICN.bigclip}</div>
+    <h1 class="survey-h1">${esc(cfg.surveyTitle)}</h1>
+    <div class="survey-sub" style="margin-bottom:24px">${esc(cfg.surveySubtitle)}</div>
+
+    <div class="card" style="margin:0; background:#FFF">
+      <div style="color:var(--navy); font-weight:700; font-size:14px; margin-bottom:10px">AMAÇ</div>
+      <p style="color:var(--ink); line-height:1.7; font-size:13px; margin-bottom:14px">
+        Bu anket; İnsan Kaynakları Departmanımızın size sunduğu hizmetleri değerlendirmek
+        ve daha iyi hale getirmek amacıyla hazırlanmıştır.
+      </p>
+      <p style="color:var(--ink); line-height:1.7; font-size:13px; margin-bottom:16px">
+        Vereceğiniz cevaplar <b>gizli tutulur</b> ve yalnızca İK hizmetlerini iyileştirmek için
+        kullanılır. Lütfen içtenlikle cevaplayınız. Katkılarınız için teşekkür ederiz.
+      </p>
+
+      <div style="color:var(--navy); font-weight:700; font-size:14px; margin-bottom:10px; margin-top:18px">DEĞERLENDİRME ÖLÇEĞİ (1-5)</div>
+      <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; font-size:10px; text-align:center">
+        ${SCALE_5_LBL.map((l,i)=>`
+          <div style="padding:8px 4px; background:${SCALE_5_COL[i]}22; border:1px solid ${SCALE_5_COL[i]}; border-radius:6px">
+            <div style="font-size:16px; font-weight:800; color:${SCALE_5_COL[i]}">${i+1}</div>
+            <div style="color:${SCALE_5_COL[i]}; font-weight:700; line-height:1.2">${l}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div style="margin-top:10px; padding:10px; background:var(--cream); border-radius:8px; font-size:12px; color:var(--muted); line-height:1.6">
+        H bölümü için 1-10 arası puanlama (1 = Hiç katılmıyorum, 10 = Tamamen katılıyorum)
+      </div>
+    </div>
+
+    <button class="btn-big" data-act="start-survey" style="margin-top:20px">
+      ${ICN.check} ANKETİ BAŞLAT
+    </button>
+
+    <div class="notice" style="margin-top:16px">
+      <b>Gizlilik:</b> Yanıtlarınız anonim olarak işlenir. Sonuçlar yalnızca
+      Kalite Müdürü ve İK Müdürü tarafından görüntülenir.
+    </div>
+  </div>`;
+}
+
+function renderForm(){
+  const cfg = state.config;
+  const scoresFilled = state.scores.filter(s=>s>0).length;
+  const commentsFilled = state.comments.filter(c=>(c||'').trim().length>0).length;
+  const totalAll = TOTAL_SCORE + OPEN_QUESTIONS.length;
+  const answeredAll = scoresFilled + commentsFilled;
+  const infoFilled = state.info.hotel && state.info.department && state.info.tenure;
+  const progress = (answeredAll/totalAll)*100;
+  const allCommentsFilled = state.comments.every(c=>(c||'').trim().length>0);
+  const canSubmit = infoFilled && state.scores.every(s=>s>0) && allCommentsFilled;
+
+  return `
+    <div class="card" style="background:var(--cream); border:2px solid var(--gold); color:var(--ink)">
+      <div class="card-hdr">
+        <div>
+          <h1 style="color:var(--navy); font-size:20px; margin-bottom:4px">${esc(cfg.surveyTitle)}</h1>
+          <div style="color:var(--gold-d); font-weight:600; font-size:12px">${esc(cfg.surveySubtitle)}</div>
+        </div>
+        <div style="padding:6px 12px; background:var(--navy); color:var(--gold-l); border-radius:20px; font-size:11px; font-weight:700; letter-spacing:.5px; font-family:monospace">
+          ${DOC_INFO.no} REV.${DOC_INFO.rev}
+        </div>
+      </div>
+      <div>
+        <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--navy); font-weight:600; margin-bottom:6px">
+          <span>Cevaplanan Soru</span><span>${answeredAll} / ${totalAll}</span>
+        </div>
+        <div class="progress"><div class="progress-fill" style="width:${progress}%"></div></div>
+      </div>
+    </div>
+
+    ${renderParticipantInfo()}
+
+    ${SECTIONS.map((sect,sIdx)=>renderSection(sect, sIdx)).join('')}
+
+    <div class="sect-hdr" style="background:linear-gradient(135deg,var(--gold-d),var(--gold)); color:#FFF">
+      <div class="sect-code" style="background:#FFF; color:var(--gold-d)">I</div>
+      <div>I. Görüş ve Önerileriniz <span style="opacity:.75; font-size:11px; margin-left:8px">(tüm sorular zorunludur)</span></div>
+    </div>
+
+    ${OPEN_QUESTIONS.map((q,i)=>{
+      const qNum = 33+i;
+      const filled = (state.comments[i]||'').trim().length>0;
+      return `
+      <div class="q-card ${filled?'answered':''}" id="q-${qNum}">
+        <div class="q-num">SORU ${qNum} *</div>
+        <div class="q-text">${esc(q)}</div>
+        <textarea class="textarea" data-open="${i}" maxlength="1500" required
+          placeholder="Görüşlerinizi buraya yazın (zorunlu)">${esc(state.comments[i])}</textarea>
+      </div>
+    `;}).join('')}
+
+    ${state.err ? `<div class="err" style="margin-bottom:14px">${ICN.alert} ${esc(state.err)}</div>` : ''}
+
+    <button class="btn-big" id="btnSubmit" ${canSubmit?'':'disabled'}>
+      ${ICN.check} ANKETİ GÖNDER
+    </button>
+    <div style="text-align:center; font-size:11px; color:#A0A8BC; margin-top:10px">
+      Gönderdikten sonra anket yeniden düzenlenemez.
+    </div>
+  `;
+}
+
+function renderParticipantInfo(){
+  const cfg = state.config;
+  const f = state.info;
+  return `
+    <div class="sect-hdr">
+      <div class="sect-code">i</div>
+      <div>Katılımcı Bilgileri</div>
+    </div>
+    <div class="card" style="background:var(--cream); border:1px solid var(--cream-d)">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px">
+        <div>
+          <label class="label">OTEL *</label>
+          <select class="select" id="selHotel">
+            <option value="">Seçiniz…</option>
+            ${cfg.hotels.map(h=>`<option value="${esc(h)}" ${f.hotel===h?'selected':''}>${esc(h)}</option>`).join('')}
+          </select>
+        </div>
+        <div>
+          <label class="label">DEPARTMAN *</label>
+          <select class="select" id="selDept">
+            <option value="">Seçiniz…</option>
+            ${cfg.departments.map(d=>`<option value="${esc(d)}" ${f.department===d?'selected':''}>${esc(d)}</option>`).join('')}
+          </select>
+        </div>
+        <div>
+          <label class="label">GÖREV / POZİSYON</label>
+          <input type="text" class="input" id="txtPos" value="${esc(f.position)}" placeholder="Örn: Resepsiyon Şefi" maxlength="80">
+        </div>
+        <div>
+          <label class="label">KAYA'DAKİ GÖREV SÜRESİ *</label>
+          <select class="select" id="selTenure">
+            <option value="">Seçiniz…</option>
+            ${cfg.tenure.map(t=>`<option value="${esc(t)}" ${f.tenure===t?'selected':''}>${esc(t)}</option>`).join('')}
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:12px; font-size:11px; color:var(--muted)">
+        Değerlendirme Tarihi: <b>${new Date().toLocaleDateString('tr-TR')}</b> &middot; * işaretli alanlar zorunludur.
+      </div>
+    </div>
+  `;
+}
+
+function renderSection(sect, sIdx){
+  const sectStart = ALL_QS.findIndex(q=>q.section===sect.code);
+  return `
+    <div class="sect-hdr">
+      <div class="sect-code">${sect.code}</div>
+      <div>${sect.code}. ${esc(sect.title)}</div>
+    </div>
+    ${sect.questions.map((qText,i)=>{
+      const absIdx = sectStart + i;
+      const qN = absIdx + 1;
+      const val = state.scores[absIdx];
+      return renderQ(qN, qText, val, absIdx, sect.scale);
+    }).join('')}
+  `;
+}
+
+function renderQ(num, text, val, absIdx, scale){
+  const ans = val>0;
+  if(scale===5){
+    return `<div class="q-card ${ans?'answered':''}" id="q-${num}">
+      <div class="q-num">SORU ${num} *</div>
+      <div class="q-text">${esc(text)}</div>
+      <div class="scale-5">
+        ${[1,2,3,4,5].map(v=>{
+          const sel = val===v;
+          const color = SCALE_5_COL[v-1];
+          return `<button class="scale-opt ${sel?'sel':''}" data-idx="${absIdx}" data-v="${v}"
+            style="${sel?`border-color:${color}; background:${color}15`:''}">
+            <div class="scale-num" style="${sel?`color:${color}`:''}">${v}</div>
+            <div class="scale-lbl" style="${sel?`color:${color}`:''}">${SCALE_5_LBL[v-1]}</div>
+          </button>`;
+        }).join('')}
+      </div>
+    </div>`;
+  } else {
+    // 1-10
+    return `<div class="q-card ${ans?'answered':''}" id="q-${num}">
+      <div class="q-num">SORU ${num} *</div>
+      <div class="q-text">${esc(text)}</div>
+      <div style="font-size:11px; color:var(--muted); margin-bottom:6px; display:flex; justify-content:space-between">
+        <span>1 — Hiç katılmıyorum</span>
+        <span>Tamamen katılıyorum — 10</span>
+      </div>
+      <div class="scale-10">
+        ${[1,2,3,4,5,6,7,8,9,10].map(v=>{
+          const sel = val===v;
+          const color = nps10Color(v);
+          return `<button class="scale-opt ${sel?'sel':''}" data-idx="${absIdx}" data-v="${v}"
+            style="${sel?`border-color:${color}; background:${color}20`:''}">
+            <div class="scale-num" style="${sel?`color:${color}`:''}">${v}</div>
+          </button>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+}
+
+/* =========================================================
+   ADMIN GİRİŞ
+   ========================================================= */
+function renderAdminLogin(){
+  return `
+  <div class="survey-wrap">
+    ${renderHeader(`<button class="hdr-btn" data-act="back-survey">← Ankete Dön</button>`)}
+    <main class="main" style="max-width:440px">
+      <div class="survey-card" style="margin-top:40px">
+        <div class="icon-circle">${ICN.bigshield}</div>
+        <h1 class="survey-h1">Yönetici Girişi</h1>
+        <div class="survey-sub" style="margin-bottom:24px">Yalnızca Kalite &amp; İK Müdürleri</div>
+
+        <label class="label">KULLANICI ADI</label>
+        <input type="text" class="input" id="loginUser" placeholder="kalite  veya  ik" autocomplete="off">
+
+        <div style="margin-top:14px">
+          <label class="label">ŞİFRE</label>
+          <input type="password" class="input" id="loginPass" autocomplete="off">
+        </div>
+
+        <div id="loginErr"></div>
+
+        <button class="btn btn-primary" data-act="login" style="margin-top:18px; width:100%; padding:14px; letter-spacing:1px; justify-content:center">
+          ${ICN.lock} GİRİŞ YAP
+        </button>
+
+        <div class="notice" style="margin-top:20px; font-size:11px">
+          Kullanıcı adı ve şifre yalnızca yetkili yöneticiler tarafından bilinir. Erişim için Kalite Müdürü ile iletişime geçiniz.
+        </div>
+      </div>
+    </main>
+  </div>`;
+}
+
+/* =========================================================
+   ADMIN PANEL
+   ========================================================= */
+function renderAdmin(){
+  const s = state.session;
+  const right = `
+    <div style="display:flex; align-items:center; gap:14px">
+      <div>
+        <div class="hdr-user">${esc(s.name)}</div>
+      </div>
+      <button class="hdr-btn" data-act="logout">${ICN.logout} Çıkış</button>
+    </div>`;
+
+  const TABS = [
+    {id:'dashboard',   label:'Gösterge Paneli', icn:ICN.bar},
+    {id:'analytics',   label:'Analizler',        icn:ICN.trend},
+    {id:'responses',   label:'Yanıtlar',         icn:ICN.doc},
+    {id:'link',        label:'Anket Linki',      icn:ICN.link},
+    {id:'settings',    label:'Ayarlar',          icn:ICN.settings}
+  ];
+
+  const tabBar = `<nav class="tabs">
+    ${TABS.map(t=>`<button class="tab ${state.adminTab===t.id?'active':''}" data-tab="${t.id}">
+      ${t.icn} ${t.label}
+    </button>`).join('')}
+  </nav>`;
+
+  let tabContent = '';
+  if(state.adminTab==='dashboard') tabContent = renderDashboard();
+  else if(state.adminTab==='analytics') tabContent = renderAnalytics();
+  else if(state.adminTab==='responses') tabContent = renderResponses();
+  else if(state.adminTab==='link') tabContent = renderLink();
+  else if(state.adminTab==='settings') tabContent = renderSettings();
+
+  const modal = state.selectedResp ? renderRespModal(state.selectedResp) : '';
+
+  return renderHeader(right) + tabBar + `<main class="main">${tabContent}</main>${modal}`;
+}
+
+/* ---------- DASHBOARD ---------- */
+function renderDashboard(){
+  const total = state.responses.length;
+  const allLikert = state.responses.flatMap(r=>r.scores.slice(0,TOTAL_LIKERT));
+  const overall = avg(allLikert);
+  const nps = state.responses.flatMap(r=>r.scores.slice(TOTAL_LIKERT));
+  const npsAvg = avg(nps);
+
+  // Section averages
+  const sectAvgs = SECTIONS.map(sect=>{
+    const idxStart = ALL_QS.findIndex(q=>q.section===sect.code);
+    const idxEnd = idxStart + sect.questions.length;
+    const vals = state.responses.flatMap(r=>r.scores.slice(idxStart, idxEnd));
+    return {code:sect.code, title:sect.title, scale:sect.scale, avg:avg(vals)};
+  });
+
+  // Strongest / weakest (1-5 sections only)
+  const likertSections = sectAvgs.filter(s=>s.scale===5);
+  const strongest = likertSections.reduce((a,b)=>a.avg>b.avg?a:b, likertSections[0]);
+  const weakest = likertSections.reduce((a,b)=>a.avg<b.avg?a:b, likertSections[0]);
+
+  const commentsCount = state.responses.reduce((sum,r)=>sum + r.comments.filter(c=>c).length, 0);
+
+  return `
+    <div class="kpi-row">
+      ${kpiCard(ICN.doc, 'Toplam Yanıt', total)}
+      ${kpiCard(ICN.star, 'Genel Likert Ort. (1-5)', total?fmt(overall,2):'—', total?scoreLabel(overall):'Veri yok', total?scoreColor(overall):'var(--muted)')}
+      ${kpiCard(ICN.heart, 'Tavsiye & Bağlılık (1-10)', total?fmt(npsAvg,2):'—', null, total?nps10Color(npsAvg):'var(--muted)')}
+      ${kpiCard(ICN.msg, 'Açık Uçlu Yorum', commentsCount)}
+    </div>
+
+    ${total>0 ? `
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-ttl">${ICN.award} En Güçlü Bölüm</div>
+          <div style="font-size:13px; color:var(--muted); margin-bottom:4px">Bölüm ${strongest.code}</div>
+          <div style="font-size:16px; color:var(--ink); line-height:1.5; margin-bottom:10px; font-weight:600">${esc(strongest.title)}</div>
+          <div style="display:flex; align-items:baseline; gap:10px">
+            <div style="font-size:32px; font-weight:800; color:${scoreColor(strongest.avg)}">${fmt(strongest.avg,2)}</div>
+            <div style="font-size:12px; color:var(--muted)">/ 5.00 ortalama</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-ttl">${ICN.alert} Gelişim Gerektiren Bölüm</div>
+          <div style="font-size:13px; color:var(--muted); margin-bottom:4px">Bölüm ${weakest.code}</div>
+          <div style="font-size:16px; color:var(--ink); line-height:1.5; margin-bottom:10px; font-weight:600">${esc(weakest.title)}</div>
+          <div style="display:flex; align-items:baseline; gap:10px">
+            <div style="font-size:32px; font-weight:800; color:${scoreColor(weakest.avg)}">${fmt(weakest.avg,2)}</div>
+            <div style="font-size:12px; color:var(--muted)">/ 5.00 ortalama</div>
+          </div>
+        </div>
+      </div>
+    ` : ''}
+
+    <div class="card">
+      <div class="card-ttl">${ICN.bar} Bölüm Bazında Ortalamalar</div>
+      ${total===0 ? noData() : '<div class="chart-box"><canvas id="chartSect"></canvas></div>'}
+    </div>
+
+    <div class="card">
+      <div class="card-ttl">${ICN.heart} Tavsiye & Bağlılık (Bölüm H) — Dağılım</div>
+      ${total===0 ? noData() : '<div class="chart-box" style="height:240px"><canvas id="chartNPS"></canvas></div>'}
+    </div>
+
+    <div class="card">
+      <div class="card-ttl">📅 Son Yanıtlar</div>
+      ${state.responses.length===0 ? noData() : renderRecentList()}
+    </div>
+  `;
+}
+
+function renderRecentList(){
+  const recent = [...state.responses].sort((a,b)=>new Date(b.submittedAt)-new Date(a.submittedAt)).slice(0,5);
+  return recent.map(r=>{
+    const m = avg(r.scores.slice(0,TOTAL_LIKERT));
+    return `
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-bottom:1px solid var(--cream-d); flex-wrap:wrap; gap:10px">
+        <div>
+          <div style="font-weight:700; font-size:13px; color:var(--navy)">${esc(r.department)}${r.position?' · '+esc(r.position):''}</div>
+          <div style="font-size:11px; color:var(--muted)">${esc(r.hotel)} &middot; ${esc(r.tenure)} &middot; ${new Date(r.submittedAt).toLocaleString('tr-TR')}</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px">
+          <div style="padding:4px 10px; border-radius:14px; background:${scoreColor(m)}22; color:${scoreColor(m)}; font-weight:800; font-size:12px">
+            ${fmt(m,2)}
+          </div>
+          ${r.comments.some(c=>c)?ICN.msg:''}
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function kpiCard(icn, lbl, val, sub, color){
+  return `<div class="kpi">
+    <div class="kpi-icn">${icn.replace('width="14"','width="22"').replace('height="14"','height="22"')}</div>
+    <div style="flex:1">
+      <div class="kpi-lbl">${lbl}</div>
+      <div class="kpi-val" style="color:${color||'var(--navy)'}">${val}</div>
+      ${sub?`<div class="kpi-sub">${sub}</div>`:''}
+    </div>
+  </div>`;
+}
+
+function noData(){
+  return '<div style="text-align:center; color:var(--muted); padding:40px">Henüz yanıt bulunmuyor.</div>';
+}
+
+/* ---------- ANALYTICS ---------- */
+function renderAnalytics(){
+  if(state.responses.length===0){
+    return `<div class="card">${noData()}</div>`;
+  }
+
+  const deptMap={}, hotelMap={}, tenureMap={};
+  state.responses.forEach(r=>{
+    const m = avg(r.scores.slice(0,TOTAL_LIKERT));
+    (deptMap[r.department]=deptMap[r.department]||[]).push(m);
+    (hotelMap[r.hotel]=hotelMap[r.hotel]||[]).push(m);
+    if(r.tenure) (tenureMap[r.tenure]=tenureMap[r.tenure]||[]).push(m);
+  });
+  const deptData = Object.entries(deptMap)
+    .map(([n,a])=>({name:n, ort:+fmt(avg(a),2), count:a.length}))
+    .sort((a,b)=>b.ort-a.ort);
+  const hotelData = Object.entries(hotelMap)
+    .map(([n,a])=>({name:n, ort:+fmt(avg(a),2), count:a.length}));
+  const tenureData = (state.config.tenure||TENURE)
+    .filter(t=>tenureMap[t])
+    .map(t=>({name:t, ort:+fmt(avg(tenureMap[t]),2), count:tenureMap[t].length}));
+
+  return `
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-ttl">🥧 Likert Genel Dağılım (1-5)</div>
+        <div class="chart-box" style="height:280px"><canvas id="chartPie"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="card-ttl">🎯 Bölüm Profili (Radar)</div>
+        <div class="chart-box" style="height:280px"><canvas id="chartRadar"></canvas></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-ttl">${ICN.bar} Her Soru İçin Ortalama</div>
+      <div class="chart-box" style="height:360px"><canvas id="chartQAll"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-ttl">${ICN.bar} Soru Bazlı Dağılım (1-5 — Bölüm A-G)</div>
+      <div class="chart-box" style="height:360px"><canvas id="chartStacked"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-ttl">${ICN.bldg} Departman Bazında Ortalama (Likert)</div>
+      <div>
+        ${deptData.map(d=>`
+          <div class="dept-row">
+            <div class="dept-name" style="min-width:180px">${esc(d.name)}</div>
+            <div class="dept-bar-wrap">
+              <div class="dept-bar" style="width:${(d.ort/5)*100}%; background:${scoreColor(d.ort)}">${fmt(d.ort,2)}</div>
+            </div>
+            <div style="min-width:60px; text-align:right; font-size:11px; color:var(--muted)">${d.count} yanıt</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-ttl">${ICN.bldg} Otel Bazında</div>
+        <div style="display:grid; gap:10px">
+          ${hotelData.map(h=>`
+            <div class="hotel-card" style="border-color:${scoreColor(h.ort)}; background:${scoreColor(h.ort)}11">
+              <div style="font-size:12px; color:var(--muted); font-weight:700; letter-spacing:1px; text-transform:uppercase">${esc(h.name)}</div>
+              <div style="font-size:30px; font-weight:800; color:${scoreColor(h.ort)}; line-height:1.1">${fmt(h.ort,2)}</div>
+              <div style="font-size:12px; color:var(--muted)">${h.count} yanıt &middot; ${scoreLabel(h.ort)}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-ttl">⏳ Görev Süresine Göre</div>
+        <div style="display:grid; gap:10px">
+          ${tenureData.map(t=>`
+            <div class="hotel-card" style="border-color:${scoreColor(t.ort)}; background:${scoreColor(t.ort)}11">
+              <div style="font-size:12px; color:var(--muted); font-weight:700; letter-spacing:1px; text-transform:uppercase">${esc(t.name)}</div>
+              <div style="font-size:30px; font-weight:800; color:${scoreColor(t.ort)}; line-height:1.1">${fmt(t.ort,2)}</div>
+              <div style="font-size:12px; color:var(--muted)">${t.count} yanıt &middot; ${scoreLabel(t.ort)}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-ttl">${ICN.trend} Zaman Serisi — Günlük Ortalama</div>
+      <div class="chart-box" style="height:260px"><canvas id="chartTrend"></canvas></div>
+    </div>
+  `;
+}
+
+/* ---------- RESPONSES ---------- */
+function renderResponses(){
+  const f = state.respFilter;
+  const filtered = state.responses.filter(r=>{
+    if(f.dept && r.department!==f.dept) return false;
+    if(f.hotel && r.hotel!==f.hotel) return false;
+    if(f.tenure && r.tenure!==f.tenure) return false;
+    if(f.withComment && !r.comments.some(c=>c)) return false;
+    return true;
+  }).sort((a,b)=>new Date(b.submittedAt)-new Date(a.submittedAt));
+
+  const cfg = state.config;
+
+  return `
+    <div class="card">
+      <div class="card-hdr">
+        <div class="card-ttl">${ICN.doc} Filtreler</div>
+        <button class="btn btn-primary" data-act="export-csv" ${filtered.length===0?'disabled':''}>
+          ${ICN.download} CSV İndir (${filtered.length})
+        </button>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px">
+        <div>
+          <label class="label">Departman</label>
+          <select class="select" id="filDept">
+            <option value="">Tümü</option>
+            ${cfg.departments.map(d=>`<option value="${esc(d)}" ${f.dept===d?'selected':''}>${esc(d)}</option>`).join('')}
+          </select>
+        </div>
+        <div>
+          <label class="label">Otel</label>
+          <select class="select" id="filHotel">
+            <option value="">Tümü</option>
+            ${cfg.hotels.map(h=>`<option value="${esc(h)}" ${f.hotel===h?'selected':''}>${esc(h)}</option>`).join('')}
+          </select>
+        </div>
+        <div>
+          <label class="label">Görev Süresi</label>
+          <select class="select" id="filTenure">
+            <option value="">Tümü</option>
+            ${cfg.tenure.map(t=>`<option value="${esc(t)}" ${f.tenure===t?'selected':''}>${esc(t)}</option>`).join('')}
+          </select>
+        </div>
+        <div style="display:flex; align-items:flex-end">
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer">
+            <input type="checkbox" id="filComment" ${f.withComment?'checked':''}>
+            <span style="font-size:13px">Yorumu olanlar</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-ttl">${ICN.doc} Yanıtlar (${filtered.length})</div>
+      ${filtered.length===0 ? noData() : `<div class="tbl-wrap"><table class="tbl">
+        <thead><tr>
+          <th>Tarih</th><th>Otel</th><th>Departman</th><th>Pozisyon</th><th>Süre</th>
+          <th style="text-align:center">Likert Ort.</th>
+          <th style="text-align:center">NPS Ort.</th>
+          <th style="text-align:center">Yorum</th>
+          <th></th>
+        </tr></thead>
+        <tbody>
+          ${filtered.map(r=>{
+            const m = avg(r.scores.slice(0,TOTAL_LIKERT));
+            const nps = avg(r.scores.slice(TOTAL_LIKERT));
+            const hasC = r.comments.some(c=>c);
+            return `<tr>
+              <td>${new Date(r.submittedAt).toLocaleString('tr-TR')}</td>
+              <td>${esc(r.hotel)}</td>
+              <td style="font-weight:600">${esc(r.department)}</td>
+              <td>${esc(r.position||'—')}</td>
+              <td>${esc(r.tenure||'—')}</td>
+              <td style="text-align:center; color:${scoreColor(m)}; font-weight:800">${fmt(m,2)}</td>
+              <td style="text-align:center; color:${nps10Color(nps)}; font-weight:800">${fmt(nps,2)}</td>
+              <td style="text-align:center">${hasC?ICN.msg:'—'}</td>
+              <td><button class="btn btn-primary" style="padding:4px 10px; font-size:11px" data-act="open-resp" data-id="${r.id}">Aç</button></td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table></div>`}
+    </div>
+
+    ${renderOpenDigest(filtered)}
+  `;
+}
+
+function renderOpenDigest(filtered){
+  const hasAny = filtered.some(r=>r.comments.some(c=>c));
+  if(!hasAny) return '';
+  return OPEN_QUESTIONS.map((q,qi)=>{
+    const comments = filtered.filter(r=>r.comments[qi]).map(r=>({r, text:r.comments[qi]}));
+    if(comments.length===0) return '';
+    return `
+      <div class="card">
+        <div class="card-ttl">${ICN.msg} Açık Uçlu — Soru ${33+qi}</div>
+        <div style="color:var(--navy); font-size:13px; font-weight:600; margin-bottom:14px">${esc(q)}</div>
+        ${comments.map(({r,text})=>`
+          <div class="comment-box">
+            <div class="comment-meta">
+              <b style="color:var(--navy)">${esc(r.department)}</b>${r.position?' · '+esc(r.position):''} &middot; ${esc(r.hotel)} &middot; ${esc(r.tenure||'—')} &middot;
+              ${new Date(r.submittedAt).toLocaleString('tr-TR')}
+            </div>
+            <div class="comment-text">${esc(text)}</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderRespModal(r){
+  const m = avg(r.scores.slice(0,TOTAL_LIKERT));
+  const nps = avg(r.scores.slice(TOTAL_LIKERT));
+  return `<div class="modal-bg" data-act="close-modal">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px">
+        <h2 style="color:var(--navy); font-size:18px; margin:0">Yanıt Detayı</h2>
+        <button style="background:none; border:none; cursor:pointer; color:var(--muted)" data-act="close-modal">${ICN.x}</button>
+      </div>
+      <div style="display:grid; grid-template-columns:auto 1fr; gap:6px 14px; font-size:13px; margin-bottom:16px">
+        <b style="color:var(--navy)">Otel:</b><span>${esc(r.hotel)}</span>
+        <b style="color:var(--navy)">Departman:</b><span>${esc(r.department)}</span>
+        <b style="color:var(--navy)">Pozisyon:</b><span>${esc(r.position||'—')}</span>
+        <b style="color:var(--navy)">Görev Süresi:</b><span>${esc(r.tenure||'—')}</span>
+        <b style="color:var(--navy)">Tarih:</b><span>${new Date(r.submittedAt).toLocaleString('tr-TR')}</span>
+        <b style="color:var(--navy)">Likert Ort.:</b><span style="color:${scoreColor(m)}; font-weight:800">${fmt(m,2)} / 5.00</span>
+        <b style="color:var(--navy)">Tavsiye & Bağlılık:</b><span style="color:${nps10Color(nps)}; font-weight:800">${fmt(nps,2)} / 10.00</span>
+      </div>
+      <div style="border-top:1px solid var(--cream-d); padding-top:14px">
+        ${ALL_QS.map((q,i)=>{
+          const v = r.scores[i];
+          const col = q.scale===5 ? SCALE_5_COL[v-1] : nps10Color(v);
+          const lbl = q.scale===5 ? SCALE_5_LBL[v-1] : '';
+          return `<div style="margin-bottom:10px; font-size:13px">
+            <div style="color:var(--muted); font-size:11px; font-weight:700">BÖLÜM ${q.section} · SORU ${q.num} · Ölçek 1-${q.scale}</div>
+            <div style="color:var(--ink); margin-bottom:4px">${esc(q.text)}</div>
+            <div style="color:${col}; font-weight:800">${v}${lbl?' — '+lbl:''}</div>
+          </div>`;
+        }).join('')}
+        ${OPEN_QUESTIONS.map((q,i)=>r.comments[i]?`
+          <div style="margin-top:16px; padding:14px; background:var(--cream); border-radius:10px; border-left:4px solid var(--gold)">
+            <div style="font-size:11px; color:var(--muted); font-weight:700; margin-bottom:6px">SORU ${33+i}</div>
+            <div style="font-size:12px; color:var(--navy); font-weight:600; margin-bottom:6px">${esc(q)}</div>
+            <div style="font-size:13px; color:var(--ink); line-height:1.6; white-space:pre-wrap">${esc(r.comments[i])}</div>
+          </div>
+        `:'').join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------- ANKET LİNKİ (QR yerine URL) ---------- */
+function renderLink(){
+  const url = window.location.href.split('#')[0];
+  // Otomatik/offline QR — api.qrserver.com bağımlılığı kaldırıldı
+  const qrImg = makeQR(url, 320);
+  return `
+    <div class="card">
+      <div class="card-ttl">${ICN.link} Anket Erişim Linki</div>
+      <p style="color:var(--ink); line-height:1.7; margin-bottom:16px">
+        Aşağıdaki <b>URL</b>'i çalışanlarınızla paylaşın. WhatsApp, e-posta, intranet veya iç iletişim
+        kanallarınız üzerinden gönderebilirsiniz. Link'e tıklayan her çalışan anketi doldurabilir.
+      </p>
+      <div class="url-box">
+        <span id="urlText">${esc(url)}</span>
+        <button class="btn btn-gold" data-act="copy-url" style="flex-shrink:0">${ICN.copy} Kopyala</button>
+      </div>
+
+      <div style="margin-top:20px; padding:16px; background:var(--cream); border-radius:10px">
+        <div style="font-size:11px; color:var(--muted); font-weight:700; letter-spacing:1px; margin-bottom:10px">İSTEĞE BAĞLI — QR KOD</div>
+        <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap">
+          <img src="${qrImg}" alt="QR" style="width:160px; height:160px; border:1px solid var(--cream-d); border-radius:8px; background:#FFF; padding:8px">
+          <div style="flex:1; min-width:240px">
+            <div style="color:var(--ink); font-size:13px; line-height:1.6; margin-bottom:10px">
+              İstersen bu QR kodu yazdırıp personel panosuna asabilirsin. QR'ı tarayan çalışan
+              doğrudan ankete yönlenir.
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap">
+              <a href="${qrImg}" target="_blank" class="btn btn-primary">${ICN.download} QR'ı Aç / İndir</a>
+              <button class="btn btn-gold" data-act="print-qr">🖨 QR Yazdır (A4)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:20px">
+        <b>Not:</b> Her cihaz, varsayılan olarak anketi yalnızca <b>bir kez</b> doldurabilir (tarayıcı
+        hafızası ile kontrol edilir). Ayarlar sekmesinden çoklu gönderime izin verebilir veya
+        bir cihazın "doldurdu" kaydını sıfırlayabilirsiniz.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-ttl">${ICN.doc} Paylaşım Şablonları</div>
+      <div style="color:var(--muted); font-size:12px; margin-bottom:14px">
+        Aşağıdaki hazır metinleri kopyalayıp e-posta, WhatsApp veya Slack üzerinden gönderebilirsiniz.
+      </div>
+      <div style="display:grid; gap:12px">
+        ${[
+          {t:'Resmi Duyuru (E-posta)', b:`Değerli çalışma arkadaşımız,\n\nİnsan Kaynakları süreçlerimizi daha iyi hale getirmek amacıyla hazırlanan İK Memnuniyet ve Değerlendirme Anketimize katılımınızı önemsiyoruz.\n\nAnket linki: ${url}\n\nAnket anonim olarak işlenmekte olup, tamamlanması yaklaşık 5-7 dakika sürmektedir.\n\nKatkılarınız için şimdiden teşekkür ederiz.\n\nKAYA Hotels & Resorts · Kalite ve İK Müdürlüğü`},
+          {t:'WhatsApp / Kısa Mesaj', b:`KAYA Hotels İK Memnuniyet Anketi aktif. Görüşleriniz bizim için değerli. Lütfen bu linkten formu doldurunuz (yaklaşık 5 dk): ${url}`},
+          {t:'Panoya Kısa Not', b:`İK Memnuniyet Anketi → ${url}  |  Yaklaşık 5 dk · Anonim · Katılımınız süreçlerimizi iyileştirir.`}
+        ].map((x,i)=>`
+          <div style="border:1px solid var(--cream-d); border-radius:10px; padding:14px; background:var(--cream)">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px">
+              <b style="color:var(--navy); font-size:13px">${esc(x.t)}</b>
+              <button class="btn btn-primary" style="padding:5px 10px; font-size:11px" data-act="copy-text" data-idx="${i}">${ICN.copy} Kopyala</button>
+            </div>
+            <pre id="tpl-${i}" style="font-family:inherit; white-space:pre-wrap; color:var(--ink); font-size:12px; line-height:1.6; margin:0">${esc(x.b)}</pre>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+/* ---------- SETTINGS ---------- */
+function renderSettings(){
+  const cfg = state.config;
+  const s = state.session;
+  return `
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-ttl">${ICN.settings} Anket Ayarları</div>
+        <label class="label">Anket Başlığı</label>
+        <input type="text" class="input" id="setTitle" value="${esc(cfg.surveyTitle)}">
+        <div style="margin-top:10px">
+          <label class="label">Alt Başlık</label>
+          <input type="text" class="input" id="setSub" value="${esc(cfg.surveySubtitle)}">
+        </div>
+        <label style="display:flex; align-items:center; gap:8px; margin-top:12px; cursor:pointer">
+          <input type="checkbox" id="setActive" ${cfg.surveyActive?'checked':''}>
+          <span style="font-size:13px">Anket aktif (çalışanlar cevaplayabilir)</span>
+        </label>
+        <label style="display:flex; align-items:center; gap:8px; margin-top:8px; cursor:pointer">
+          <input type="checkbox" id="setMulti" ${cfg.allowMultipleSubmissions?'checked':''}>
+          <span style="font-size:13px">Aynı cihazdan birden fazla gönderime izin ver</span>
+        </label>
+        <div style="margin-top:12px">
+          <label class="label">Oteller (her satır bir otel)</label>
+          <textarea class="textarea" id="setHotels" style="min-height:70px">${esc(cfg.hotels.join('\n'))}</textarea>
+        </div>
+        <div style="margin-top:12px">
+          <label class="label">Departmanlar (her satır bir departman)</label>
+          <textarea class="textarea" id="setDepts" style="min-height:140px">${esc(cfg.departments.join('\n'))}</textarea>
+        </div>
+        <div style="margin-top:12px">
+          <label class="label">Görev Süresi Seçenekleri</label>
+          <textarea class="textarea" id="setTenure" style="min-height:70px">${esc(cfg.tenure.join('\n'))}</textarea>
+        </div>
+        <button class="btn btn-primary" data-act="save-config" style="margin-top:14px; width:100%; justify-content:center">
+          ${ICN.check} Ayarları Kaydet
+        </button>
+        <div id="cfgMsg" style="margin-top:10px; font-size:12px; font-weight:700"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-ttl">${ICN.link} Google Sheets Entegrasyonu</div>
+        <p style="color:var(--muted); font-size:12px; line-height:1.6; margin-bottom:12px">
+          Anket gönderimleri otomatik olarak bir Google Sheet'e yazılır. Apps Script
+          (Web App) URL'inizi buraya yapıştırın. URL boş bırakılırsa yanıtlar yalnızca
+          bu cihazın tarayıcı hafızasında saklanır.
+        </p>
+        <label class="label">Apps Script Web App URL</label>
+        <input type="url" class="input" id="setWebhook" placeholder="https://script.google.com/macros/s/AKfyc.../exec"
+          value="${esc(cfg.sheetsWebhookUrl || '')}"
+          style="font-family:monospace; font-size:12px">
+        <div style="display:flex; gap:8px; margin-top:10px; flex-wrap:wrap">
+          <button class="btn btn-primary" data-act="test-webhook" style="flex:1; justify-content:center">
+            ${ICN.refresh} Bağlantıyı Test Et
+          </button>
+          <a class="btn btn-gold" id="openSheetBtn" href="#" target="_blank" style="flex:1; justify-content:center; display:${cfg.sheetsWebhookUrl?'inline-flex':'none'}">
+            ${ICN.link} Sheet'i Aç
+          </a>
+        </div>
+        <div id="webhookMsg" style="margin-top:10px; font-size:12px; font-weight:700"></div>
+        <details style="margin-top:14px; font-size:12px; color:var(--ink)">
+          <summary style="cursor:pointer; font-weight:700; color:var(--navy)">Nasıl kurulur? (1 kez, ~5 dk)</summary>
+          <ol style="margin-top:10px; padding-left:20px; line-height:1.8">
+            <li>Google Drive'da yeni bir Sheet oluşturun (örn. "KAYA İK Anket 2026").</li>
+            <li>Sheet içinde <b>Uzantılar > Apps Script</b> menüsünü açın.</li>
+            <li>Size verilen <b>KAYA_Anket_AppsScript.gs</b> dosyasının içeriğini yapıştırın ve kaydedin.</li>
+            <li>Sağ üstten <b>Deploy > New deployment > Web app</b>:
+              <ul style="margin-top:4px">
+                <li>Execute as: <b>Me</b></li>
+                <li>Who has access: <b>Anyone</b></li>
+              </ul>
+            </li>
+            <li>Deploy sonrası verilen URL'i yukarıdaki kutuya yapıştırın, kaydedin.</li>
+          </ol>
+        </details>
+      </div>
+
+      <div class="card">
+        <div class="card-ttl">${ICN.lock} Şifre Değiştir</div>
+        <div style="font-size:12px; color:var(--muted); margin-bottom:10px">
+          Oturumdaki hesap: <b style="color:var(--navy)">${esc(s.username)}</b> (${esc(s.name)})
+        </div>
+        <label class="label">Mevcut Şifre</label>
+        <input type="password" class="input" id="pwCur">
+        <div style="margin-top:10px">
+          <label class="label">Yeni Şifre</label>
+          <input type="password" class="input" id="pwNew">
+        </div>
+        <div style="margin-top:10px">
+          <label class="label">Yeni Şifre (tekrar)</label>
+          <input type="password" class="input" id="pwNew2">
+        </div>
+        <div id="pwMsg" style="margin-top:10px"></div>
+        <button class="btn btn-primary" data-act="change-pw" style="margin-top:12px; width:100%; justify-content:center">
+          ${ICN.lock} Şifreyi Güncelle
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="card-ttl">${ICN.alert} Veri Yönetimi</div>
+        <div style="font-size:12px; color:var(--muted); margin-bottom:14px; line-height:1.6">
+          Bu işlemler <b>geri alınamaz</b>. Yedekleme için önce JSON dışa aktarın.
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <button class="btn btn-primary" data-act="reload-all">${ICN.refresh} Verileri Yeniden Yükle</button>
+          <button class="btn btn-primary" data-act="reset-submitted">🔓 Bu Cihazın "Doldurdu" Kaydını Sıfırla</button>
+          <button class="btn btn-danger" data-act="reset-resp">${ICN.trash} Tüm Yanıtları Sil (${state.responses.length})</button>
+          <button class="btn btn-primary" data-act="export-backup">${ICN.download} Tam Yedekleme (JSON)</button>
+          <label class="btn btn-primary" style="cursor:pointer">
+            ${ICN.download} Yedek Geri Yükle (JSON)
+            <input type="file" id="restoreFile" accept=".json" style="display:none">
+          </label>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-ttl">${ICN.shield} Sistem Bilgisi</div>
+        <div style="font-size:13px; color:var(--ink); line-height:1.9">
+          <div><b style="color:var(--navy)">Form No:</b> ${DOC_INFO.no}</div>
+          <div><b style="color:var(--navy)">Revizyon:</b> ${DOC_INFO.rev}</div>
+          <div><b style="color:var(--navy)">Yayın Tarihi:</b> ${DOC_INFO.date}</div>
+          <div><b style="color:var(--navy)">Anket Durumu:</b>
+            <span style="color:${cfg.surveyActive?'var(--success)':'var(--danger)'}; font-weight:700">
+              ${cfg.surveyActive?'AKTİF':'PASİF'}
+            </span>
+          </div>
+          <div><b style="color:var(--navy)">Toplam Yanıt:</b> ${state.responses.length}</div>
+          <div><b style="color:var(--navy)">Soru Sayısı:</b> 32 ölçekli + 4 açık uçlu = 36</div>
+          <div><b style="color:var(--navy)">Anket URL:</b></div>
+          <div style="padding:8px; background:var(--cream); border-radius:6px; font-size:11px; font-family:monospace; color:var(--navy); word-break:break-all; margin-top:4px">
+            ${esc(window.location.href.split('#')[0])}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/* =========================================================
+   OLAY BAĞLAYICI
+   ========================================================= */
+function attachEvents(){
+  document.querySelectorAll('[data-act]').forEach(el=>{ el.onclick = handleAction; });
+  document.querySelectorAll('[data-tab]').forEach(el=>{
+    el.onclick = () => { state.adminTab = el.dataset.tab; render(); };
+  });
+
+  // Scale options
+  document.querySelectorAll('.scale-opt').forEach(el=>{
+    el.onclick = () => {
+      const idx = parseInt(el.dataset.idx);
+      const v = parseInt(el.dataset.v);
+      state.scores[idx] = v;
+      state.err = '';
+      render();
+    };
+  });
+
+  // Participant info
+  const sh = document.getElementById('selHotel');
+  if(sh) sh.onchange = e => { state.info.hotel = e.target.value; };
+  const sd = document.getElementById('selDept');
+  if(sd) sd.onchange = e => { state.info.department = e.target.value; };
+  const st = document.getElementById('selTenure');
+  if(st) st.onchange = e => { state.info.tenure = e.target.value; };
+  const tp = document.getElementById('txtPos');
+  if(tp) tp.oninput = e => { state.info.position = e.target.value; };
+
+  // Open-ended textareas
+  document.querySelectorAll('[data-open]').forEach(el=>{
+    el.oninput = e => { state.comments[parseInt(el.dataset.open)] = e.target.value; };
+    // Yazmayı bitirdiğinde (focus kaybı) progress ve "cevaplandı" rozeti güncellensin
+    el.onblur = () => {
+      // Cursor zaten kaybolduğu için render tetikleyebiliriz
+      const hadValue = (state.comments[parseInt(el.dataset.open)]||'').trim().length>0;
+      // Sadece state değişimi anlamlıysa render et (gereksiz render'dan kaçın)
+      if(el.dataset.lastBlurFilled !== String(hadValue)){
+        el.dataset.lastBlurFilled = String(hadValue);
+        render();
+      }
+    };
+  });
+
+  // Submit form
+  const btnSubmit = document.getElementById('btnSubmit');
+  if(btnSubmit) btnSubmit.onclick = submitForm;
+
+  // Admin login
+  const lu = document.getElementById('loginUser');
+  if(lu) lu.onkeydown = e => { if(e.key==='Enter') doLogin(); };
+  const lp = document.getElementById('loginPass');
+  if(lp) lp.onkeydown = e => { if(e.key==='Enter') doLogin(); };
+
+  // Filters
+  const fd = document.getElementById('filDept');
+  if(fd) fd.onchange = e => { state.respFilter.dept = e.target.value; render(); };
+  const fh = document.getElementById('filHotel');
+  if(fh) fh.onchange = e => { state.respFilter.hotel = e.target.value; render(); };
+  const ft = document.getElementById('filTenure');
+  if(ft) ft.onchange = e => { state.respFilter.tenure = e.target.value; render(); };
+  const fc = document.getElementById('filComment');
+  if(fc) fc.onchange = e => { state.respFilter.withComment = e.target.checked; render(); };
+
+  const rf = document.getElementById('restoreFile');
+  if(rf) rf.onchange = handleRestore;
+}
+
+function handleAction(e){
+  const act = e.currentTarget.dataset.act;
+  const id = e.currentTarget.dataset.id;
+  const idx = e.currentTarget.dataset.idx;
+
+  switch(act){
+    case 'goto-admin':
+      state.view = state.session ? 'admin' : 'admin-login';
+      window.location.hash = state.session ? '#/admin' : '#/admin-login';
+      render(); break;
+    case 'back-survey':
+      state.view = 'survey';
+      if(!state.config.allowMultipleSubmissions && S.get(K_SUBMITTED, false)){
+        state.surveyStage = 'already';
+      } else {
+        state.surveyStage = 'intro';
+      }
+      state.err = '';
+      window.location.hash = '';
+      render(); break;
+    case 'start-survey':
+      state.surveyStage = 'form'; render(); break;
+    case 'login': doLogin(); break;
+    case 'logout':
+      state.session = null; state.view = 'survey';
+      state.surveyStage = S.get(K_SUBMITTED, false) && !state.config.allowMultipleSubmissions ? 'already' : 'intro';
+      window.location.hash = '';
+      render(); break;
+    case 'open-resp':
+      state.selectedResp = state.responses.find(r=>r.id===id);
+      render(); break;
+    case 'close-modal':
+      state.selectedResp = null; render(); break;
+    case 'export-csv': exportCsv(); break;
+    case 'copy-url':
+      copyText(window.location.href.split('#')[0]); toast('Link kopyalandı'); break;
+    case 'copy-text':
+      const el = document.getElementById('tpl-'+idx);
+      if(el) copyText(el.textContent); toast('Metin kopyalandı'); break;
+    case 'print-qr': printQR(); break;
+    case 'save-config': saveConfig(); break;
+    case 'change-pw': changePassword(); break;
+    case 'reload-all':
+      state.responses = S.get(K_RESP, []);
+      state.config = S.get(K_CONFIG, state.config);
+      render(); break;
+    case 'reset-submitted':
+      S.del(K_SUBMITTED);
+      alert('Bu cihazın "doldurdu" kaydı sıfırlandı.');
+      break;
+    case 'reset-resp':
+      if(confirm('Tüm yanıtlar silinsin mi? Bu işlem geri alınamaz.') &&
+         confirm('EMİN MİSİNİZ? Tüm anket yanıtları kalıcı olarak silinecek.')){
+        state.responses = []; S.set(K_RESP, []);
+        render(); alert('Tüm yanıtlar silindi.');
+      } break;
+    case 'export-backup': exportBackup(); break;
+    case 'test-webhook': testWebhook(); break;
+  }
+}
+
+function submitForm(){
+  if(!state.info.hotel){ state.err='Lütfen otel seçiniz.'; render(); scrollTo(0,0); return; }
+  if(!state.info.department){ state.err='Lütfen departman seçiniz.'; render(); scrollTo(0,0); return; }
+  if(!state.info.tenure){ state.err='Lütfen görev sürenizi seçiniz.'; render(); scrollTo(0,0); return; }
+
+  // Eksik skorlu soruyu bul
+  const missingScoreIdx = state.scores.findIndex(s=>!(s>0));
+  if(missingScoreIdx !== -1){
+    const qNum = missingScoreIdx + 1;
+    const qText = ALL_QS[missingScoreIdx].text;
+    state.err = `Cevaplamadığınız soru var — SORU ${qNum}: "${qText.slice(0,70)}${qText.length>70?'…':''}"`;
+    render();
+    focusMissing('q-'+qNum);
+    return;
+  }
+
+  // Eksik açık uçlu soruyu bul
+  const missingCmtIdx = state.comments.findIndex(c=>!(c||'').trim());
+  if(missingCmtIdx !== -1){
+    const qNum = 33 + missingCmtIdx;
+    const qText = OPEN_QUESTIONS[missingCmtIdx];
+    state.err = `Cevaplamadığınız soru var — SORU ${qNum}: "${qText.slice(0,70)}${qText.length>70?'…':''}"`;
+    render();
+    focusMissing('q-'+qNum, true);
+    return;
+  }
+
+  const newResp = {
+    id: genId(),
+    hotel: state.info.hotel,
+    department: state.info.department,
+    position: state.info.position,
+    tenure: state.info.tenure,
+    scores: state.scores.slice(),
+    comments: state.comments.slice(),
+    submittedAt: new Date().toISOString()
+  };
+  const freshResp = S.get(K_RESP, []);
+  const allResp = [...freshResp, newResp];
+  S.set(K_RESP, allResp);
+  state.responses = allResp;
+
+  if(!state.config.allowMultipleSubmissions){
+    S.set(K_SUBMITTED, true);
+  }
+
+  // Google Sheets webhook'a gönder (varsa) — fire-and-forget
+  sendToSheets(newResp);
+
+  state.surveyStage = 'done';
+  state.scores = new Array(TOTAL_SCORE).fill(0);
+  state.comments = new Array(OPEN_QUESTIONS.length).fill('');
+  state.info = {hotel:'', department:'', position:'', tenure:''};
+  render();
+  scrollTo(0,0);
+}
+
+/* ---------- Eksik soru scroll/highlight yardımcısı ---------- */
+function focusMissing(elId, focusTextarea){
+  // render() sonrası DOM güncellemesini bekle
+  setTimeout(() => {
+    const el = document.getElementById(elId);
+    if(!el) return;
+    el.classList.add('q-missing');
+    el.scrollIntoView({behavior:'smooth', block:'center'});
+    if(focusTextarea){
+      const ta = el.querySelector('textarea');
+      if(ta) setTimeout(()=>ta.focus(), 500);
+    }
+    // 2 sn sonra highlight'ı kaldır (yeniden render olunca da sıfırlanır)
+    setTimeout(()=>el.classList.remove('q-missing'), 2200);
+  }, 60);
+}
+
+/* ---------- Google Sheets Webhook ---------- */
+function sendToSheets(resp){
+  const url = state.config && state.config.sheetsWebhookUrl;
+  if(!url || !/^https:\/\/script\.google\.com\//.test(url)) return;
+  try {
+    // Apps Script web app: text/plain ile CORS preflight atlanır
+    fetch(url, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(resp)
+    }).catch(e => console.warn('Sheets webhook error:', e));
+  } catch(e) {
+    console.warn('Sheets webhook exception:', e);
+  }
+}
+
+async function testWebhook(){
+  const input = document.getElementById('setWebhook');
+  const msg = document.getElementById('webhookMsg');
+  if(!input || !msg) return;
+  const url = input.value.trim();
+  if(!url){
+    msg.style.color = 'var(--danger)';
+    msg.textContent = 'Önce bir URL yapıştırın.';
+    return;
+  }
+  if(!/^https:\/\/script\.google\.com\//.test(url)){
+    msg.style.color = 'var(--danger)';
+    msg.textContent = 'URL https://script.google.com/ ile başlamalıdır.';
+    return;
+  }
+  msg.style.color = 'var(--muted)';
+  msg.textContent = 'Bağlantı test ediliyor...';
+  try {
+    // GET ile ping — CORS: Apps Script web app'leri script.google.com'dan
+    // gelen redirect nedeniyle opaque yanıt verir; ulaşabilmemiz de yeterli
+    const pingUrl = url + (url.includes('?') ? '&' : '?') + 'ping=1';
+    await fetch(pingUrl, { mode: 'no-cors' });
+    msg.style.color = 'var(--success)';
+    msg.innerHTML = '✓ URL erişilebilir. Kaydetmeyi unutmayın. İlk anket gönderildikten sonra Sheet\'de yeni satır olup olmadığını kontrol edin.';
+  } catch(e) {
+    msg.style.color = 'var(--danger)';
+    msg.textContent = 'Bağlantı kurulamadı: ' + (e.message || e);
+  }
+}
+
+function doLogin(){
+  const u = (document.getElementById('loginUser')||{}).value || '';
+  const p = (document.getElementById('loginPass')||{}).value || '';
+  const rec = state.config.admins[u.trim().toLowerCase()];
+  const errBox = document.getElementById('loginErr');
+  if(!rec || rec.password !== p){
+    if(errBox) errBox.innerHTML = `<div class="err" style="margin-top:12px">${ICN.alert} Kullanıcı adı veya şifre hatalı.</div>`;
+    return;
+  }
+  state.session = {username:u.trim().toLowerCase(), ...rec, loginAt:new Date().toISOString()};
+  state.view = 'admin';
+  state.adminTab = 'dashboard';
+  window.location.hash = '#/admin';
+  render();
+}
+
+function exportCsv(){
+  const f = state.respFilter;
+  const filtered = state.responses.filter(r=>{
+    if(f.dept && r.department!==f.dept) return false;
+    if(f.hotel && r.hotel!==f.hotel) return false;
+    if(f.tenure && r.tenure!==f.tenure) return false;
+    if(f.withComment && !r.comments.some(c=>c)) return false;
+    return true;
+  });
+  const headers = ['ID','Otel','Departman','Pozisyon','Görev Süresi','Tarih',
+    ...ALL_QS.map(q=>`S${q.num} (${q.section}/Ölç.${q.scale})`),
+    'Likert Ort.','NPS Ort.',
+    ...OPEN_QUESTIONS.map((_,i)=>`Açık S${33+i}`)
+  ];
+  const rows = filtered.map(r=>[
+    r.id, r.hotel, r.department, r.position||'', r.tenure||'',
+    new Date(r.submittedAt).toLocaleString('tr-TR'),
+    ...r.scores,
+    fmt(avg(r.scores.slice(0,TOTAL_LIKERT)),2),
+    fmt(avg(r.scores.slice(TOTAL_LIKERT)),2),
+    ...r.comments.map(c=>`"${(c||'').replace(/"/g,'""')}"`)
+  ]);
+  const csv = [headers, ...rows].map(row=>row.join(';')).join('\n');
+  const blob = new Blob(['\uFEFF'+csv], {type:'text/csv;charset=utf-8'});
+  download(blob, `KAYA_IK_Anket_${new Date().toISOString().slice(0,10)}.csv`);
+}
+
+function exportBackup(){
+  const data = {
+    config: state.config,
+    responses: state.responses,
+    formNo: DOC_INFO.no, rev: DOC_INFO.rev,
+    exportedAt: new Date().toISOString()
+  };
+  const blob = new Blob([JSON.stringify(data,null,2)], {type:'application/json'});
+  download(blob, `KAYA_IK_Yedek_${new Date().toISOString().slice(0,10)}.json`);
+}
+
+function handleRestore(e){
+  const file = e.target.files[0]; if(!file) return;
+  if(!confirm('Seçilen yedek mevcut tüm verilerin üzerine yazılacak. Devam edilsin mi?')) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try{
+      const data = JSON.parse(reader.result);
+      if(data.config) S.set(K_CONFIG, data.config);
+      if(data.responses) S.set(K_RESP, data.responses);
+      state.config = data.config || state.config;
+      state.responses = data.responses || [];
+      alert('Yedek başarıyla geri yüklendi.');
+      render();
+    }catch(err){ alert('Yedek okunamadı: '+err.message); }
+  };
+  reader.readAsText(file);
+}
+
+function download(blob, name){
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = name; a.click();
+  URL.revokeObjectURL(url);
+}
+
+function saveConfig(){
+  const nt = document.getElementById('setTitle').value.trim();
+  const ns = document.getElementById('setSub').value.trim();
+  const na = document.getElementById('setActive').checked;
+  const nm = document.getElementById('setMulti').checked;
+  const nh = document.getElementById('setHotels').value.split('\n').map(s=>s.trim()).filter(Boolean);
+  const nd = document.getElementById('setDepts').value.split('\n').map(s=>s.trim()).filter(Boolean);
+  const ntn = document.getElementById('setTenure').value.split('\n').map(s=>s.trim()).filter(Boolean);
+  const whEl = document.getElementById('setWebhook');
+  const nw = whEl ? whEl.value.trim() : (state.config.sheetsWebhookUrl || '');
+  state.config = {
+    ...state.config,
+    surveyTitle: nt || 'İnsan Kaynakları Memnuniyet ve Değerlendirme Anketi',
+    surveySubtitle: ns,
+    surveyActive: na,
+    allowMultipleSubmissions: nm,
+    hotels: nh.length ? nh : state.config.hotels,
+    departments: nd.length ? nd : state.config.departments,
+    tenure: ntn.length ? ntn : state.config.tenure,
+    sheetsWebhookUrl: nw
+  };
+  S.set(K_CONFIG, state.config);
+  const msg = document.getElementById('cfgMsg');
+  if(msg){ msg.style.color='var(--success)'; msg.textContent='Ayarlar kaydedildi.'; setTimeout(()=>msg.textContent='', 2500); }
+}
+
+function changePassword(){
+  const cur = document.getElementById('pwCur').value;
+  const n1 = document.getElementById('pwNew').value;
+  const n2 = document.getElementById('pwNew2').value;
+  const msg = document.getElementById('pwMsg');
+  const say = (txt,ok)=>{ msg.innerHTML = `<div style="padding:8px 12px; background:${ok?'#DCFCE7':'#FEE2E2'}; color:${ok?'var(--success)':'var(--danger)'}; border-radius:8px; font-size:12px; font-weight:600">${txt}</div>`; };
+  if(!cur||!n1||!n2){ say('Tüm alanları doldurunuz.'); return; }
+  if(n1!==n2){ say('Yeni şifreler eşleşmiyor.'); return; }
+  if(n1.length<6){ say('Yeni şifre en az 6 karakter olmalıdır.'); return; }
+  const rec = state.config.admins[state.session.username];
+  if(!rec || rec.password!==cur){ say('Mevcut şifre hatalı.'); return; }
+  state.config.admins[state.session.username] = {...rec, password:n1};
+  S.set(K_CONFIG, state.config);
+  say('Şifre başarıyla değiştirildi.', true);
+  document.getElementById('pwCur').value = '';
+  document.getElementById('pwNew').value = '';
+  document.getElementById('pwNew2').value = '';
+}
+
+function printQR(){
+  const url = window.location.href.split('#')[0];
+  // Otomatik/offline QR — yüksek çözünürlük, gömülü kütüphane
+  const qrUrl = makeQR(url, 700);
+  const html = `<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><title>KAYA İK Anketi — QR</title>
+    <style>
+      @page { size: A4; margin: 15mm; }
+      body { font-family: Calibri, 'Segoe UI', sans-serif; color:#0C1C40; text-align:center; margin:0; padding:20mm 0; }
+      h1 { color:#0C1C40; margin-bottom:4mm; }
+      .sub { color:#B8973A; font-weight:700; letter-spacing:2px; font-size:11pt; margin-bottom:10mm; }
+      img { width:140mm; height:140mm; border:2px solid #B8973A; padding:5mm; background:#fff; border-radius:8mm; }
+      .url { font-family:monospace; font-size:11pt; color:#0C1C40; margin-top:8mm; padding:3mm 6mm; background:#F8F4EE; border-radius:4mm; display:inline-block; }
+      .foot { margin-top:6mm; font-size:10pt; color:#6B7280; }
+    </style></head><body>
+    <div style="color:#B8973A; font-weight:700; letter-spacing:3px; font-size:12pt; margin-bottom:2mm;">KAYA HOTELS &amp; RESORTS</div>
+    <h1>İK Memnuniyet ve Değerlendirme Anketi</h1>
+    <div class="sub">Görüşleriniz bizim için değerlidir</div>
+    <img src="${qrUrl}" alt="QR">
+    <div class="url">${url}</div>
+    <div class="foot">QR'ı taratın veya URL'i tarayıcınıza yazın &middot; Anket anonimdir &middot; Yaklaşık 5-7 dakika</div>
+    <script>window.onload=()=>setTimeout(()=>window.print(),700);<\/script>
+    </body></html>`;
+  const w = window.open('','_blank');
+  w.document.write(html);
+  w.document.close();
+}
+
+async function copyText(t){
+  try{ await navigator.clipboard.writeText(t); }
+  catch{
+    const ta = document.createElement('textarea'); ta.value = t;
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); }catch{}
+    document.body.removeChild(ta);
+  }
+}
+
+function toast(msg){
+  const t = document.createElement('div');
+  t.textContent = msg;
+  t.style.cssText = 'position:fixed; top:20px; left:50%; transform:translateX(-50%); background:#15803D; color:#FFF; padding:10px 20px; border-radius:8px; z-index:200; font-weight:700; font-size:13px; box-shadow:0 4px 12px rgba(0,0,0,.2)';
+  document.body.appendChild(t);
+  setTimeout(()=>t.remove(), 1800);
+}
+
+/* =========================================================
+   GRAFİKLER
+   ========================================================= */
+let chartInstances = [];
+function destroyCharts(){ chartInstances.forEach(c=>{try{c.destroy();}catch{}}); chartInstances=[]; }
+
+function attachAdminCharts(){
+  destroyCharts();
+  if(state.responses.length===0) return;
+
+  // Dashboard: sections
+  const c1 = document.getElementById('chartSect');
+  if(c1){
+    const data = SECTIONS.map(sect=>{
+      const idxStart = ALL_QS.findIndex(q=>q.section===sect.code);
+      const idxEnd = idxStart + sect.questions.length;
+      const vals = state.responses.flatMap(r=>r.scores.slice(idxStart, idxEnd));
+      return {code:sect.code, title:sect.title, scale:sect.scale, ort:+fmt(avg(vals),2)};
+    });
+    chartInstances.push(new Chart(c1, {
+      type:'bar',
+      data:{
+        labels: data.map(d=>`${d.code} (1-${d.scale})`),
+        datasets:[{
+          label:'Ortalama',
+          data: data.map(d=>d.ort),
+          backgroundColor: data.map(d=>d.scale===5?scoreColor(d.ort):nps10Color(d.ort)),
+          borderRadius:6
+        }]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{display:false}, tooltip:{ callbacks:{ title:(i)=>data[i[0].dataIndex].title } } },
+        scales:{ y:{beginAtZero:true, ticks:{color:'#6B7280'}}, x:{ticks:{color:'#0C1C40', font:{weight:'bold'}}} }
+      }
+    }));
+  }
+
+  // Dashboard: NPS distribution
+  const c2 = document.getElementById('chartNPS');
+  if(c2){
+    const npsAll = state.responses.flatMap(r=>r.scores.slice(TOTAL_LIKERT));
+    const buckets = Array.from({length:10}, (_,i)=>npsAll.filter(v=>v===i+1).length);
+    chartInstances.push(new Chart(c2, {
+      type:'bar',
+      data:{
+        labels: ['1','2','3','4','5','6','7','8','9','10'],
+        datasets:[{
+          label:'Cevap Sayısı',
+          data: buckets,
+          backgroundColor: [1,2,3,4,5,6,7,8,9,10].map(v=>nps10Color(v)),
+          borderRadius:4
+        }]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{display:false} },
+        scales:{ y:{beginAtZero:true, ticks:{color:'#6B7280', precision:0}}, x:{ticks:{color:'#0C1C40', font:{weight:'bold'}}} }
+      }
+    }));
+  }
+
+  // Analytics: Pie (1-5 distribution)
+  const p1 = document.getElementById('chartPie');
+  if(p1){
+    const all1_5 = state.responses.flatMap(r=>r.scores.slice(0,TOTAL_LIKERT));
+    const dist = [1,2,3,4,5].map(v=>all1_5.filter(x=>x===v).length);
+    chartInstances.push(new Chart(p1, {
+      type:'doughnut',
+      data:{
+        labels: SCALE_5_LBL,
+        datasets:[{ data:dist, backgroundColor:SCALE_5_COL, borderWidth:2, borderColor:'#FFF' }]
+      },
+      options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'bottom', labels:{font:{size:11}}}} }
+    }));
+  }
+
+  // Analytics: Radar (section averages)
+  const p2 = document.getElementById('chartRadar');
+  if(p2){
+    const radarData = SECTIONS.map(sect=>{
+      const idxStart = ALL_QS.findIndex(q=>q.section===sect.code);
+      const idxEnd = idxStart + sect.questions.length;
+      const vals = state.responses.flatMap(r=>r.scores.slice(idxStart, idxEnd));
+      return sect.scale===5 ? avg(vals) : avg(vals)/2; // normalize to 0-5
+    });
+    chartInstances.push(new Chart(p2, {
+      type:'radar',
+      data:{
+        labels: SECTIONS.map(s=>s.code),
+        datasets:[{
+          label:'Ortalama (0-5 normalize)',
+          data: radarData.map(v=>+fmt(v,2)),
+          backgroundColor:'rgba(184,151,58,.35)',
+          borderColor:'#B8973A', borderWidth:2, pointBackgroundColor:'#0C1C40', pointRadius:4
+        }]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{legend:{display:false}},
+        scales:{ r:{min:0, max:5, ticks:{backdropColor:'transparent', color:'#6B7280'},
+                    angleLines:{color:'#CFC6B5'}, grid:{color:'#CFC6B5'},
+                    pointLabels:{color:'#0C1C40', font:{weight:'bold', size:14}}} }
+      }
+    }));
+  }
+
+  // Analytics: All question averages
+  const p3 = document.getElementById('chartQAll');
+  if(p3){
+    const qAvgs = ALL_QS.map((q,i)=>({
+      num:q.num, scale:q.scale,
+      ort: avg(state.responses.map(r=>r.scores[i]))
+    }));
+    chartInstances.push(new Chart(p3, {
+      type:'bar',
+      data:{
+        labels: qAvgs.map(q=>`S${q.num}`),
+        datasets:[{
+          label:'Ortalama',
+          data: qAvgs.map(q=>+fmt(q.scale===5 ? q.ort : q.ort/2, 2)),
+          backgroundColor: qAvgs.map(q=>q.scale===5 ? scoreColor(q.ort) : nps10Color(q.ort)),
+          borderRadius:4
+        }]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{
+          legend:{display:false},
+          tooltip:{callbacks:{
+            title:(i)=>ALL_QS[i[0].dataIndex].text.slice(0,70),
+            label:(c)=>`Ort: ${c.parsed.y}${ALL_QS[c.dataIndex].scale===10?' (5 üzerinden normalize)':''}`
+          }}
+        },
+        scales:{ y:{min:0,max:5,ticks:{color:'#6B7280'}}, x:{ticks:{color:'#0C1C40', font:{weight:'bold', size:9}, maxRotation:0}} }
+      }
+    }));
+  }
+
+  // Analytics: Stacked distribution (1-5 only)
+  const p4 = document.getElementById('chartStacked');
+  if(p4){
+    const likertQs = ALL_QS.filter(q=>q.scale===5);
+    const datasets = [1,2,3,4,5].map((v,i)=>({
+      label: SCALE_5_LBL[i],
+      data: likertQs.map(q=>{
+        const absIdx = ALL_QS.indexOf(q);
+        return state.responses.filter(r=>r.scores[absIdx]===v).length;
+      }),
+      backgroundColor: SCALE_5_COL[i]
+    }));
+    chartInstances.push(new Chart(p4, {
+      type:'bar',
+      data:{ labels: likertQs.map(q=>`S${q.num}`), datasets },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{legend:{position:'bottom', labels:{font:{size:11}}}},
+        scales:{ x:{stacked:true, ticks:{color:'#0C1C40', font:{weight:'bold', size:9}}},
+                 y:{stacked:true, ticks:{color:'#6B7280'}} }
+      }
+    }));
+  }
+
+  // Analytics: Trend
+  const p5 = document.getElementById('chartTrend');
+  if(p5){
+    const dayMap = {};
+    state.responses.forEach(r=>{
+      const d = new Date(r.submittedAt).toLocaleDateString('tr-TR');
+      (dayMap[d]=dayMap[d]||[]).push(avg(r.scores.slice(0,TOTAL_LIKERT)));
+    });
+    const trend = Object.entries(dayMap).map(([d,a])=>({x:d, y:+fmt(avg(a),2)}))
+      .sort((a,b)=>{
+        const pa=a.x.split('.').map(Number), pb=b.x.split('.').map(Number);
+        return new Date(pa[2],pa[1]-1,pa[0]) - new Date(pb[2],pb[1]-1,pb[0]);
+      });
+    chartInstances.push(new Chart(p5, {
+      type:'line',
+      data:{
+        labels: trend.map(t=>t.x),
+        datasets:[{
+          label:'Günlük Likert Ort.', data: trend.map(t=>t.y),
+          borderColor:'#B8973A', backgroundColor:'rgba(184,151,58,.15)',
+          borderWidth:3, tension:.3, pointBackgroundColor:'#0C1C40', pointRadius:5
+        }]
+      },
+      options:{
+        responsive:true, maintainAspectRatio:false,
+        plugins:{legend:{display:false}},
+        scales:{ y:{min:0, max:5, ticks:{color:'#6B7280'}}, x:{ticks:{color:'#0C1C40', font:{weight:'bold'}}} }
+      }
+    }));
+  }
+}
+
+/* =========================================================
+   BAŞLAT
+   ========================================================= */
+window.addEventListener('load', boot);
+</script>
+</body>
+</html>
